@@ -126,6 +126,9 @@ body, html {
  /* About section styling */
  .about {
    height: 100vh;
+   background-size: cover;
+   background-image: url(../public/images/img-6.gif);
+   background-attachment: fixed;
  }
 
  .about-txt-img {
@@ -208,6 +211,8 @@ body, html {
 }
 
 /* Resume section styling */
+
+
 .resume-title {
   font-size: 9vh;
   font-weight: 900;
@@ -227,8 +232,10 @@ body, html {
   top: -8vh;
 }
 
-.container {
-  height: 100vh;
+.resume {
+  height: 1415px;
+  position: relative;
+  left: 10vh;
 }
 
 ul.a-2 {
@@ -247,7 +254,7 @@ li.a-2::before {
   content: '';
   position: absolute;
   width: 20px;
-  height: 385px;
+  height: 415px;
   left: 9px;
   top: 30px;
   background: #fff;
@@ -301,7 +308,7 @@ li.a-2-2::before {
   content: '';
   position: absolute;
   width: 20px;
-  height: 315px;
+  height: 470px;
   left: 9px;
   top: 30px;
   background: #fff;
@@ -412,12 +419,12 @@ li.a-1-1 {
   padding: 10px 0px;
   font-size: 18px;
   top: 10px;
-  font-size: '18px';
+  font-family: 'EB Garamond';
 }
 
 .a-1 {
   position: relative;
-  top: -4vh;
+  top: -14vh;
   left: -7vh;
 }
 
@@ -454,7 +461,7 @@ h5 {
 .h-3-1 {
   font-size: 43px;
   position: relative;
-  top: 12px;
+  top: -12vh;
   color: black;
   font-family: "EB Garamond";
   font-style: 'italic';
@@ -469,9 +476,80 @@ h5 {
 .ul-2 {
   position: relative;
   list-style-type: disc;
-  left: -22px;
+  left: -7vh;
+  top: -4.5vh;
 } 
 
+.ul-2-1 {
+  position: relative;
+  list-style-type: disc;
+  left: -7vh;
+  top: -10vh;
+} 
+
+li.a-2-4 {
+  overflow: hidden;
+  position: relative;
+  padding: 0px 0px 10px 35px;
+}
+li.a-2-4::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 320px;
+  left: 9px;
+  top: 30px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-width: 2px 0 0 2px;
+}
+li.a-2-4::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 21px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-radius: 50%;
+}
+li.a-2-5 {
+  overflow: hidden;
+  position: relative;
+  padding: 0px 0px 10px 35px;
+}
+li.a-2-5::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 890px;
+  left: 9px;
+  top: 30px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-width: 2px 0 0 2px;
+}
+li.a-2-5::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 21px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-radius: 50%;
+}
+
+/* Portfolio Section Styling */
+.portfolio {
+  display: block;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(../public/images/img-5.jpeg);
+  background-attachment: fixed;
+}
 
 
 

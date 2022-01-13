@@ -88,7 +88,7 @@ const Intro = () => {
                 style={{
                   fontWeight: '900',
                   fontSize: '11vh',
-                  paddingBottom: '25px',
+                  paddingBottom: '0px',
                 }}
               >
                 Emmanuel
@@ -114,13 +114,13 @@ const Intro = () => {
                 }}
               >
                 <span style={{ postion: 'relative', fontSize: '6.5vh' }}>
-                  and I'm a&nbsp;
+                  and I'm&nbsp;
                 </span>
                 <span
                   style={{ position: 'static' }}
                   className='text-type'
                   data-wait='3000'
-                  data-words='["Creator", "Developer", "Designer", "Engineer", "Learner"]'
+                  data-words='["a Creator", "a Developer", "a Designer", "an Engineer", "a Learner"]'
                 ></span>
                 <span style={{ fontSize: '47px' }} className='cursor'>
                   &nbsp;

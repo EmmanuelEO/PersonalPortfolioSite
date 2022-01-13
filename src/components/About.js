@@ -14,8 +14,6 @@ const About = () => {
       <div className='about-description'>
         <div
           className='about-text'
-          data-aos='fade-down'
-          data-aos-duration='2000'
         >
           <p className='about-para'>About Me: </p>
           <p className='para-border'></p>
@@ -28,7 +26,6 @@ const About = () => {
               className='about-pic'
               data-aos='fade-right'
               data-aos-duration='1500'
-              data-aos-delay='1000'
             />
           </div>
           <div className='about-right'>
@@ -36,7 +33,7 @@ const About = () => {
               className='about-text-right'
               data-aos='fade-left'
               data-aos-duration='2000'
-              data-aos-delay='1800'
+              data-aos-delay='1000'
             >
               <div style={{ fontFamily: 'EB Garamond' }}>
                 I'm currently a Computer Engineering Student at Simon Fraser
