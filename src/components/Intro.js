@@ -67,7 +67,7 @@ const Intro = () => {
   }
 
   return (
-    <section className='Home'>
+    <section className='home'>
       <div className='main'>
         <div className='left'>
           <div className='my-background-2'></div>

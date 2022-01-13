@@ -377,7 +377,8 @@ const Resume = () => {
                   }}
                 >
                   Website:{' '}
-                  <a href='https://shopoutletapp.herokuapp.com/'>
+                  <a href='https://shopoutletapp.herokuapp.com/' rel='noreferrer'
+                    target='_blank'>
                     https://shopoutletapp.herokuapp.com/
                   </a>
                 </h4>
@@ -416,7 +417,7 @@ const Resume = () => {
                       top: '-4.5vh',
                     }}
                   >
-                    Json Web Token, &nbsp;JWT Authentication, Heroku
+                    Jsoan Web Token, &nbsp;JWT Authentication, Heroku
                   </h5>
                   <ul className='ul-2-1'>
                     <li
@@ -480,7 +481,8 @@ const Resume = () => {
                   }}
                 >
                   Website:{' '}
-                  <a href='http://studentmanagementappfullstack-env.eba-6ayfszt3.us-east-1.elasticbeanstalk.com/'>
+                  <a href='http://studentmanagementappfullstack-env.eba-6ayfszt3.us-east-1.elasticbeanstalk.com/' rel='noreferrer'
+                    target='_blank'>
                     http://studentmanagementappfullstack-env.eba-6ayfszt3.us-east-1.elasticbeanstalk.com/
                   </a>
                 </h4>
@@ -510,7 +512,7 @@ const Resume = () => {
                       left: '-33.7vh'
                     }}
                   >
-                    Gits, Github Action (for CI/CD), Docker
+                    Git, Github Actions (for CI/CD), Docker
                   </h5>
                   <h5
                     style={{
