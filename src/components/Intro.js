@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment, useEffect } from 'react'
 import myImg from '../img/my_pic.png'
 
 const Intro = () => {
@@ -68,30 +68,72 @@ const Intro = () => {
 
   return (
     <section className='Home'>
-    <div className='main'>
-      <div className='left'>
-        <div className='my-background-2'></div>
-        <div className='inside-left'>
-          <h2 className='greeting'>Hello! I'm</h2>
-          <h1 className='name'>Emmanuel Okonkwo</h1>
-          <span className='title' style={{ fontSize: '50px' }}>
-            <span>and I'm a </span>
-            <span
-              className='text-type'
-              data-wait='3000'
-              data-words='["Developer", "Designer", "Creator"]'
-            ></span>
-            <span style={{ fontSize: '50px' }} className='cursor'>
-              &nbsp;
-            </span>
-          </span>
+      <div className='main'>
+        <div className='left'>
+          <div className='my-background-2'></div>
+          <div className='inside-left'>
+            <div style={{ position: 'relative', left: '-7vh' }}>
+              <h2
+                className='greeting'
+                style={{
+                  paddingBottom: '25px',
+                  fontWeight: 'bolder',
+                  fontSize: '5vh',
+                }}
+              >
+                Hello! I'm
+              </h2>
+              <p
+                className='name'
+                style={{
+                  fontWeight: '900',
+                  fontSize: '11vh',
+                  paddingBottom: '25px',
+                }}
+              >
+                Emmanuel
+              </p>
+              <p
+                className='name'
+                style={{
+                  fontWeight: '900',
+                  fontSize: '11vh',
+                  paddingBottom: '25px',
+                }}
+              >
+                Okonkwo
+              </p>
+            </div>
+            <div>
+              <span
+                className='title'
+                style={{
+                  fontSize: '47px',
+                  left: '-8vh',
+                  display: 'inline-block',
+                }}
+              >
+                <span style={{ postion: 'relative', fontSize: '6.5vh' }}>
+                  and I'm a&nbsp;
+                </span>
+                <span
+                  style={{ position: 'static' }}
+                  className='text-type'
+                  data-wait='3000'
+                  data-words='["Creator", "Developer", "Designer", "Engineer", "Learner"]'
+                ></span>
+                <span style={{ fontSize: '47px' }} className='cursor'>
+                  &nbsp;
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className='right'>
+          <div className='my-background-1'></div>
+          <img src={myImg} alt='myImg' className='my-img' />
         </div>
       </div>
-      <div className='right'>
-        <div className='my-background-1'></div>
-        <img src={myImg} alt='myImg' className='my-img' />
-      </div>
-    </div>
     </section>
   )
 }

@@ -1,12 +1,14 @@
 import './App.css'
 import Intro from './components/Intro'
 import About from './components/About'
+import Resume from './components/Resume'
 
 function App() {
   return (
     <div className='App'>
       <Intro />
       <About />
+      <Resume />
       {/* <div class='first'>
         <div class='first-1'>
           <span class='border'>First Text</span>

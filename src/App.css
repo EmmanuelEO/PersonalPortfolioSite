@@ -1,4 +1,5 @@
 body, html {
+  font-family: 'EB Garamond';
   background-color:rgb(245, 240, 240);
 } 
 
@@ -17,12 +18,15 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 1
+  flex: 1;
 }
 
 .inside-left {
   height: 50%;
-  padding: 50px;
+  padding: 40px;
+  position: relative;
+  top: -15vh;
+  left: -1vh;
 }
 
 .right {
@@ -119,7 +123,7 @@ body, html {
   }
 }
 
- /* About Section Styling */
+ /* About section styling */
  .about {
    height: 100vh;
  }
@@ -129,6 +133,7 @@ body, html {
   display: flex;
   position: relative;
   left: -5vh;
+  top: 15vh;
  }
 
  .about-left {
@@ -152,12 +157,12 @@ body, html {
  }
 
  .about-para {
-   font-size: 45px;
+   font-size: 8vh;
    font-weight: 600;
    position: relative;
    left: 10vh;
+   top: 5vh;
    padding: 0;
-
  }
 
  .about-text-right {
@@ -166,31 +171,23 @@ body, html {
   position: relative;
   left: 2vh;
   text-align: justify;
-  top: -11vh;
-  font-size: 25px;
+  top: -7vh;
+  font-size: 20px;
  }
 
  .para-border {
-  border-bottom: 4px solid aqua;
+  border-bottom: 5px solid aqua;
   position: relative;
-  top: -5vh;
+  top: 3vh;
   left: 10vh;
-  width: 25vh;
+  width: 33vh;
  }
 
  .connect-txt {
-   padding: 15px;
+   padding: 10px;
    text-align: center;
-   font-size: 45px;
+   font-size: 38px;
    font-weight: 600;
- }
-
- .connect-txt-border {
-  border-bottom: 4px solid aqua;
-  position: relative;
-  top: -5vh;
-  left: 10vh;
-  width: 22vh;
  }
 
  .social-icons {
@@ -199,10 +196,281 @@ body, html {
    left: 0vh;
  }
 
+ #after {
+  position: absolute;
+  align-content: center;
+  display: inline-block;
+  width: 300px;
+  height: 3px;
+  background: #149ddd;
+  padding: 0;
+  margin: 0;
+}
 
+/* Resume section styling */
+.resume-title {
+  font-size: 9vh;
+  font-weight: 900;
+}
 
+.resume-border {
+  border-bottom: 5px solid aqua;
+  position: relative;
+  top: -3vh;
+  left: 0vh;
+  width: 29vh;
+}
 
+.resume-detail {
+  position: relative;
+  left: -6vh;
+  top: -8vh;
+}
 
+.container {
+  height: 100vh;
+}
+
+ul.a-2 {
+  list-style: square;
+  margin: 50px;
+  padding: 0;
+  font: normal 16px/22px Arial;
+  color: #999;
+}
+li.a-2 {
+  overflow: hidden;
+  position: relative;
+  padding: 0px 0px 10px 35px;
+}
+li.a-2::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 385px;
+  left: 9px;
+  top: 30px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-width: 2px 0 0 2px;
+}
+li.a-2::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 21px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-radius: 50%;
+}
+li.a-3 {
+  overflow: hidden;
+  position: relative;
+  padding: 0px 0px 10px 35px;
+}
+li.a-3::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 190px;
+  left: 9px;
+  top: 30px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-width: 2px 0 0 2px;
+}
+li.a-3::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 21px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-radius: 50%;
+}
+li.a-2-2 {
+  list-style-type: none;
+  position: relative;
+  padding: 0px 0px 10px 35px;
+}
+li.a-2-2::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 315px;
+  left: 9px;
+  top: 30px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-width: 2px 0 0 2px;
+}
+li.a-2-2::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 21px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-radius: 50%;
+}
+li.a-2-3 {
+  list-style-type: none;
+  position: relative;
+  padding: 0px 0px 10px 35px;
+}
+li.a-2-3::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 297px;
+  left: 9px;
+  top: 30px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-width: 2px 0 0 2px;
+}
+li.a-2-3::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 21px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-radius: 50%;
+}
+#col-1 {
+  transition-duration: 2s;
+}
+#col-2 {
+  transition-duration: 2s;
+}
+nav .container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+nav .container ul li {
+  display: inline-block;
+}
+nav .container ul li.active a {
+  color: #f38a8a;
+	border-bottom: 3px solid #f38a8a;
+}
+nav .container ul a:hover {
+  color: #f38a8a;
+}
+nav .container ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  margin: 50px;
+  padding: 0;
+  font: normal 16px/22px Arial;
+  color: #999;
+}
+li {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 10px 35px;
+}
+li::before {
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  width: 20px;
+  height: 999px;
+  border: 2px solid lightblue;
+  border-width: 2px 0 0 2px;
+}
+
+#d_div {
+  position: relative;
+}
+
+li.a-1-1 {
+  margin: 4px 0;
+}
+
+.p-1 {
+  position: relative;
+  padding: 10px 0px;
+  font-size: 18px;
+  top: 10px;
+  font-size: '18px';
+}
+
+.a-1 {
+  position: relative;
+  top: -4vh;
+  left: -7vh;
+}
+
+h4 {
+  line-height: 18px;
+  font-size: 2.5009rem;
+  font-weight: 550;
+  word-spacing: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #6b6b6e;
+  margin-bottom: 10px;
+}
+
+h5 {
+  position: relative;
+  top: -12px;
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.h-3 {
+  font-size: 43px;
+  position: relative;
+  top: 25px;
+  color: black;
+  font-family: "EB Garamond";
+  font-weight: 900;
+}
+
+.h-3-1 {
+  font-size: 43px;
+  position: relative;
+  top: 12px;
+  color: black;
+  font-family: "EB Garamond";
+  font-style: 'italic';
+  font-weight: 900;
+}
+
+.a-2-2 {
+  position: relative;
+  top: -12px;
+}
+
+.ul-2 {
+  position: relative;
+  list-style-type: disc;
+  left: -22px;
+} 
 
 
 
