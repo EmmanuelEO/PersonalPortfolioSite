@@ -3,16 +3,16 @@ import myImg from '../img/my_img.jpeg'
 
 const Portfolio = () => {
   return (
-    <section className='portfolio'>
+    <section id='portfolio'>
       <div className='portfolio-1'>
-        <div>
-          <h1 className='port-title'>Portfolio</h1>
+        <p className='port-title'>Portfolio</p>
           <p className='port-border'></p>
+        <div>
+          
         </div>
+
         <div className='container-fluid'>
-          <div
-            className='row rounded port-shift'
-          >
+          <div className='row rounded'>
             <div className='col-sm-12 col-md-6 col-lg-4 py-3'>
               <div className='card' data-aos='flip-up'>
                 <a
@@ -27,7 +27,7 @@ const Portfolio = () => {
                     alt='myImg'
                   />
                 </a>
-                <div className='card-body port-size'>
+                <div className='card-body'>
                   <a
                     href='https://shopoutletapp.herokuapp.com/'
                     target='_blank'

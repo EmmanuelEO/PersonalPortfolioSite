@@ -15,11 +15,8 @@ const Resume = () => {
             <li className='a-2'>
               <h4 className='n-1'>&nbsp;Name: Emmanuel Okonkwo</h4>
               <div className='p-1'>
-                <p>Innovative, deadline-driven, and passion</p>
-                <p>-driven Student, Software Engineer and</p>
-                <p>Developer with 3+ years of programming</p>
-                <p>experience. The relevant courses I've taken</p>
-                <p>include:</p>
+                <p>Innovative, deadline-driven, and passion-driven Student, Software Engineer and Developer with 3+ years of programming
+                experience. The relevant courses I've taken include:</p>
               </div>
               <ul className='a-1'>
                 <li className='a-1-1'>Operating Systems</li>
@@ -114,7 +111,7 @@ const Resume = () => {
                     PayPal API, Hooks API, Redux, Postman
                   </h5>
                   <h5 className='h5-1'>
-                    Jsoan Web Token, &nbsp;JWT Authentication, Heroku
+                    Json Web Token, &nbsp;JWT Authentication, Heroku
                   </h5>
                   <ul className='ul-2-1'>
                     <li className='proj-1-desc'>

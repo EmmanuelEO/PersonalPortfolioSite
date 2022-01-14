@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect } from 'react'
+import { Container, Row } from 'react-bootstrap'
 import myImg from '../img/my_pic.png'
 
 const Intro = () => {
@@ -67,50 +68,41 @@ const Intro = () => {
   }
 
   return (
-    <section className='home'>
+    <section id='home'>
       <div className='main'>
         <div className='left'>
-          <div className='my-background-2'></div>
-          <div className='inside-left'>
-            <div className='inside-left-intro'>
-              <h2
-                className='greeting'
-              >
-                Hello! I'm
-              </h2>
-              <p
-                className='name'
-              >
-                Emmanuel
-              </p>
-              <p
-                className='name-1'
-              >
-                Okonkwo
-              </p>
-            </div>
-            <div>
-              <span
-                className='title'
-              >
-                <span>
-                  and I'm&nbsp;
-                </span>
-                <span
-                  className='text-type'
-                  data-wait='3000'
-                  data-words='["a Creator", "a Developer", "a Designer", "an Engineer", "a Learner"]'
-                ></span>
-                <span className='cursor'>
-                  &nbsp;
-                </span>
-              </span>
-            </div>
-          </div>
+          <Container fluid>
+            <Row>
+              <div className='my-background-2'></div>
+              <div className='intro-text col-sm-18 col-md-9 col-lg-6 ml-5 pl-5'>
+                <div>
+                  <h2 className='greeting'>Hello! I'm</h2>
+                  <p className='name'>Emmanuel</p>
+                  <p className='name-1'>Okonkwo</p>
+                </div>
+                <div>
+                  <span className='title pt-0 mt-0'>
+                    <span>and I'm&nbsp;</span>
+                    <span
+                      className='text-type'
+                      data-wait='3000'
+                      data-words='["a Creator", "a Developer", "a Designer", "an Engineer", "a Learner"]'
+                    ></span>
+                    <span className='cursor'>&nbsp;</span>
+                  </span>
+                </div>
+              </div>
+            </Row>
+          </Container>
         </div>
+
         <div className='right'>
-          <div className='my-background-1'></div>
-          <img src={myImg} alt='myImg' className='my-img' />
+          <Container fluid>
+            <Row>
+              <div className='my-background-1'></div>
+              <img src={myImg} alt='myImg' className='my-img' />
+            </Row>
+          </Container>
         </div>
       </div>
     </section>

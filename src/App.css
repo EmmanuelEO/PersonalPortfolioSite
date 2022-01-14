@@ -1,963 +1,1565 @@
-/* =Responsive Structure
------------------------------------------------ */
-/* @media (min-width: 1200px) { */
-  body,
-  html {
-    font-family: 'EB Garamond';
-    background-color: rgb(245, 240, 240);
-    overflow-x: hidden;
-  }
+header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  margin: 0;
+  padding: 0px 20px;
+  background-color: #F5F0F0;
+  z-index: 1111;
+}
 
-  .main {
-    display: flex;
-    height: 100vh;
-  }
+.main-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+}
 
-  /* Home Section Styling */
-  .home {
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url(./img/143999-modern-blue-and-white-square-abstract-background.jpeg);
-  }
+.ul-1 {
+  display: flex;
+  list-style-type: none;
+  font-size: 23px;
+  margin: 25px;
+  font-family: 'EB Garamond';
+  font-weight: bolder;
+  border: none;
+}
 
-  .left {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-  }
+nav .li-2 {
+  border: none;
+  display: inline-block;
+  padding: 5px;
+  font-weight: bold;
+  transition: all ease-in-out 0.5s;
+  margin-right: 50px;
+  list-style: none;
+}
 
-  .inside-left {
-    height: 50%;
-    padding: 40px;
-    position: relative;
-    top: -15vh;
-    left: -1vh;
-  }
+nav .li-2::before {
+  border: none;
+  display: inline-block;
+  padding: 5px;
+  transition: all ease-in-out 0.5s;
+  margin-right: 50px;
+  list-style: none;
+}
 
-  .right {
-    flex: 1;
-    position: relative;
-  }
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding: 5px;
+}
 
-  .greeting {
-    position: relative;
-    top: 3vh;
-    font-size: 30px;
-    padding-bottom: 25px;
-    font-weight: bolder;
-    font-size: 5vh;
-  }
+nav ul li a {
+  transition: all 0.5s ease-in-out;
+}
 
-  .my-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-  }
+nav ul li.active a {
+  color: #f38a8a;
+  font-weight: bold;
+	border-bottom: 3px solid #f38a8a;
+}
+nav ul a:hover {
+  font-weight: bold;
+  color: #f38a8a;
+}
 
-  .about-pic {
-    border-radius: 50px;
-  }
 
-  .my-background-1 {
-    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-    background-color: rgb(0, 255, 255);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
+/* =Responsive Structure */
+body,
+html {
+  font-family: 'EB Garamond';
+  background-color: rgb(245, 240, 240);
+}
 
-  .my-background-2 {
-    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-    background-color: rgb(0, 255, 255);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
+.main {
+  display: flex;
+  height: 100vh;
+}
 
-  .name {
-    font-size: 60px;
-    position: relative;
-    font-weight: 900;
-    font-size: 11vh;
-    padding-bottom: 0px;
-  }
+/* Home Section Styling */
+#home {
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(./img/143999-modern-blue-and-white-square-abstract-background.jpeg);
+}
 
-  .name-1 {
-    font-weight: 900;
-    font-size: 11vh;
-    padding-bottom: 25px;
-  }
+.left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
 
-  .inside-left-intro {
-    position: relative;
-    left: -7vh;
-  }
+.inside-left {
+  height: 50%;
+  padding: 40px;
+}
 
-  .title {
-    position: relative;
-    top: -2vh;
-    font-size: 44px;
-    left: -8vh;
-    display: 'inline-block';
-    position: relative;
-  }
+.right {
+  flex: 1;
+  position: relative;
+}
 
-  .cursor {
-    font-weight: bold;
-    position: absolute;
-    display: inline-block;
+.greeting {
+  position: relative;
+  top: 3vh;
+  font-size: 30px;
+  padding-bottom: 25px;
+  font-weight: bolder;
+}
+
+.my-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.about-pic {
+  border-radius: 50px;
+}
+
+.my-background-1 {
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  background-color: rgb(0, 255, 255);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.my-background-2 {
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  background-color: rgb(0, 255, 255);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.name {
+  position: relative;
+  font-weight: 900;
+  font-size: 12vh;
+  padding-bottom: 0px;
+}
+
+.name-1 {
+  font-weight: 900;
+  font-size: 12vh;
+  padding-bottom: 25px;
+}
+
+.inside-left-intro {
+  position: relative;
+  left: -7vh;
+}
+
+.title {
+  font-size: 40.5px;
+  display: 'inline-block';
+  position: absolute;
+}
+
+.cursor {
+  font-weight: bold;
+  position: absolute;
+  display: inline-block;
+  background-color: black;
+  font-size: 40px;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+
+.text-type {
+  position: static;
+  background-color: rgb(164, 226, 226);
+}
+
+.cursor.typing {
+  animation: none;
+}
+
+@keyframes blink {
+  0% {
     background-color: black;
-    font-size: 44px;
-    width: 3px;
-    animation: blink 1s infinite;
   }
-
-  .text-type {
-    position: static;
-    background-color: rgb(164, 226, 226);
+  49% {
+    background-color: black;
   }
-
-  .cursor.typing {
-    animation: none;
+  50% {
+    background-color: transparent;
   }
-
-  @keyframes blink {
-    0% {
-      background-color: black;
-    }
-    49% {
-      background-color: black;
-    }
-    50% {
-      background-color: transparent;
-    }
-    99% {
-      background-color: transparent;
-    }
-    100% {
-      background-color: black;
-    }
+  99% {
+    background-color: transparent;
   }
-
-  /* About section styling */
-  .about {
-    height: 100vh;
-    background-size: cover;
-    background-image: url(../public/images/img-6.gif);
-    background-attachment: fixed;
+  100% {
+    background-color: black;
   }
+}
 
-  .about-txt-img {
-    align-items: center;
-    display: flex;
-    position: relative;
-    left: -5vh;
-    top: 15vh;
-  }
+/* About section styling */
+#about {
+  height: 110vh;
+  background-size: cover;
+  background-image: url(../public/images/img-6.gif);
+  background-attachment: fixed;
+}
 
-  .about-left {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
+.about-txt-img {
+  align-items: center;
+  display: flex;
+  position: relative;
+  left: -5vh;
+  top: 15vh;
+}
 
-  .about-right {
-    flex: 1.75;
-  }
+.about-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
-  .about-info {
-    font-size: 20px;
-    font-family: 'EB Garamond';
-  }
+.about-right {
+  flex: 1.75;
+}
 
-  .about-pic {
-    position: relative;
-    top: -6vh;
-    width: 78%;
-    height: 78%;
-    object-fit: cover;
-  }
+.about-info {
+  font-size: 22px;
+  font-family: 'EB Garamond';
+}
 
-  .about-para {
-    font-size: 8vh;
-    font-weight: 600;
-    position: relative;
-    left: 10vh;
-    top: 5vh;
-    padding: 0;
-  }
+.about-pic {
+  position: relative;
+  top: -6vh;
+  width: 78%;
+  height: 78%;
+  object-fit: cover;
+}
 
-  .about-text-right {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    left: 2vh;
-    text-align: justify;
-    top: -7vh;
-    font-size: 20px;
-  }
+.about-para {
+  font-size: 8vh;
+  font-weight: 600;
+  position: relative;
+  left: 10vh;
+  top: 5vh;
+  padding: 0;
+}
 
-  .para-border {
-    border-bottom: 5px solid aqua;
-    position: relative;
-    top: 3vh;
-    left: 10vh;
-    width: 33vh;
-  }
+.about-text-right {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 2vh;
+  text-align: justify;
+  top: -7vh;
+  font-size: 20px;
+}
 
-  .connect-txt {
-    padding: 10px;
-    text-align: center;
-    font-size: 38px;
-    font-weight: 600;
-  }
+.para-border {
+  border-bottom: 5px solid aqua;
+  position: relative;
+  top: 3vh;
+  left: 10vh;
+  width: 33vh;
+}
 
-  .social-icons {
-    position: relative;
-    text-align: center;
-    left: 0vh;
-  }
+.connect-txt {
+  padding: 10px;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 600;
+}
 
-  .social-icon {
-    padding-right: 5vh;
-    font-size: 6vh;
-  }
+.social-icons {
+  position: relative;
+  text-align: center;
+  left: 0vh;
+}
 
-  #after {
-    position: absolute;
-    align-content: center;
-    display: inline-block;
-    width: 300px;
-    height: 3px;
-    background: #149ddd;
-    padding: 0;
-    margin: 0;
-  }
+.social-icon {
+  padding-right: 5vh;
+  font-size: 6vh;
+}
 
-  /* Resume section styling */
+#after {
+  position: absolute;
+  align-content: center;
+  display: inline-block;
+  width: 300px;
+  height: 3px;
+  background: #149ddd;
+  padding: 0;
+  margin: 0;
+}
 
-  .resume-title {
-    font-size: 9vh;
-    font-weight: 900;
-  }
+/* Resume section styling */
 
-  .resume-border {
-    border-bottom: 5px solid aqua;
-    position: relative;
-    top: -3vh;
-    left: 0vh;
-    width: 29vh;
-  }
+.resume-title {
+  font-size: 9vh;
+  font-weight: 900;
+}
 
-  .resume-detail {
-    position: relative;
-    left: -6vh;
-    top: -8vh;
-  }
+.resume-border {
+  border-bottom: 5px solid aqua;
+  position: relative;
+  top: -3vh;
+  left: 0vh;
+  width: 29vh;
+}
 
+.resume-detail {
+  position: relative;
+  left: -6vh;
+  top: -8vh;
+}
+
+.resume {
+  height: 1500px;
+  position: relative;
+  left: 10vh;
+}
+
+.n-1 {
+  position: relative;
+  top: 15px;
+  left: -5px;
+  font-size: 30px;
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 900;
+  padding-bottom: 10px;
+}
+
+ul.a-2 {
+  list-style: square;
+  margin: 50px;
+  padding: 0;
+  font: normal 16px/22px Arial;
+  color: #999;
+}
+li.a-2 {
+  overflow: hidden;
+  position: relative;
+  padding: 0px 0px 10px 35px;
+  top: 15px;
+}
+li.a-2::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 330px;
+  left: 9px;
+  top: 30px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-width: 2px 0 0 2px;
+}
+li.a-2::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 21px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-radius: 50%;
+}
+li.a-2-1 {
+  overflow: hidden;
+  position: relative;
+  padding: 0px 0px 10px 35px;
+  top: -1vh;
+}
+li.a-2-1::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 415px;
+  left: 9px;
+  top: 30px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-width: 2px 0 0 2px;
+}
+li.a-2-1::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 21px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-radius: 50%;
+}
+li.a-3 {
+  overflow: hidden;
+  position: relative;
+  padding: 0px 0px 10px 35px;
+}
+li.a-3::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 190px;
+  left: 9px;
+  top: 30px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-width: 2px 0 0 2px;
+}
+li.a-3::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 21px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-radius: 50%;
+}
+li.a-2-2 {
+  list-style-type: none;
+  position: relative;
+  padding: 0px 0px 10px 35px;
+  top: 15px;
+}
+li.a-2-2::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 470px;
+  left: 9px;
+  top: 30px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-width: 2px 0 0 2px;
+}
+li.a-2-2::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 21px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-radius: 50%;
+}
+li.a-2-3 {
+  list-style-type: none;
+  position: relative;
+  padding: 0px 0px 10px 35px;
+}
+li.a-2-3::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 297px;
+  left: 9px;
+  top: 30px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-width: 2px 0 0 2px;
+}
+li.a-2-3::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 21px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-radius: 50%;
+}
+
+.div-5 {
+  position: relative;
+  top: 12px;
+}
+
+.proj-1-title {
+  position: relative;
+  left: -5px;
+  top: 8px;
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.proj-1-web {
+  position: relative;
+  top: 10px;
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-size: 2.5vh;
+  padding-bottom: 5px;
+}
+
+.proj-1-tech {
+  position: relative;
+  top: 10px;
+  left: -5px;
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-size: 2.5vh;
+  padding-bottom: 30px;
+}
+
+.proj-1-desc {
+  font-style: normal;
+  font-family: 'EB Garamond';
+  font-size: 18px;
+  color: #393a3b;
+}
+
+.div-6 {
+  position: relative;
+  top: -8px;
+}
+
+#col-1 {
+  transition-duration: 2s;
+}
+#col-2 {
+  transition-duration: 2s;
+}
+nav .container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+nav .container ul li {
+  display: inline-block;
+}
+nav .container ul li.active a {
+  color: #f38a8a;
+  border-bottom: 3px solid #f38a8a;
+}
+nav .container ul a:hover {
+  color: #f38a8a;
+}
+nav .container ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 50px;
+  padding: 0;
+  font: normal 16px/22px Arial;
+  color: #999;
+}
+li {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 10px 35px;
+}
+
+li::before {
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  width: 20px;
+  height: 999px;
+  border: 2px solid lightblue;
+  border-width: 2px 0 0 2px;
+}
+
+#d_div {
+  position: relative;
+}
+
+.div-1 {
+  position: relative;
+  top: 4vh;
+}
+
+.school-txt {
+  position: relative;
+  top: -15px;
+  font-family: 'EB Garamond';
+  color: #393a3b;
+  word-spacing: 3px;
+}
+
+.school-loc {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  color: #9d9da1;
+  word-spacing: 3px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.school-desc {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  word-spacing: 3px;
+  font-size: 20px;
+  position: relative;
+  top: -1vh;
+}
+
+li.a-1-1 {
+  margin: 4px 0;
+  list-style-type: disc;
+  color: #393a3b;
+  font-size: 22px;
+  font-family: 'Garamond';
+  font-style: italic;
+}
+
+.p-1 {
+  position: relative;
+  padding: 15px 0px;
+  font-size: 25px;
+  top: 10px;
+  font-family: 'EB Garamond';
+  color: grey;
+  font-weight: 300;
+  word-spacing: 2px;
+}
+
+.a-1 {
+  position: relative;
+  top: -7vh;
+  left: -7vh;
+}
+
+h4 {
+  line-height: 18px;
+  font-size: 2.5009rem;
+  font-weight: 550;
+  word-spacing: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #6b6b6e;
+  margin-bottom: 10px;
+}
+
+.major {
+  font-size: 30px;
+  position: relative;
+  top: 12px;
+  color: #626269;
+  left: -5px;
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 900;
+}
+
+.minor {
+  font-size: 25px;
+  position: relative;
+  top: 12px;
+  color: #626269;
+  left: -5px;
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 900;
+}
+
+.volunteer-loc {
+  position: relative;
+  top: 12px;
+  color: #626269;
+  left: -5px;
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.volunteer {
+  position: relative;
+  top: 20px;
+}
+
+.div-3 {
+  position: relative;
+  top: -15px;
+  color: #393a3b;
+  font-family: 'Garamond';
+  word-spacing: 3px;
+}
+
+.vol-loc {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-size: 18px;
+  font-weight: bold;
+  word-spacing: 3px;
+  color: #9d9da1;
+}
+
+.vol-desc {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-size: 21px;
+  word-spacing: 3px;
+  position: relative;
+  top: -1vh;
+}
+
+.ul-3 {
+  position: relative;
+  top: -5vh;
+  left: -7vh;
+}
+
+.li-1 {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-size: 19px;
+  color: #393a3b;
+  list-style-type: disc;
+}
+
+h5 {
+  position: relative;
+  top: -12px;
+  font-size: 17px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 900;
+  margin-bottom: 10px;
+  font-family: 'EB Garamond';
+}
+
+.h5-1 {
+  font-family: EB Garamond;
+  position: relative;
+  top: -3vh;
+}
+
+.h-3 {
+  font-size: 43px;
+  position: relative;
+  top: 25px;
+  color: black;
+  font-family: 'EB Garamond';
+  font-weight: 900;
+}
+
+.h-3-1 {
+  font-size: 43px;
+  position: relative;
+  top: 0vh;
+  color: black;
+  font-family: 'EB Garamond';
+  font-style: 'italic';
+  font-weight: 900;
+}
+
+.h-3-2 {
+  font-size: 43px;
+  position: relative;
+  top: -6vh;
+  color: black;
+  font-family: 'EB Garamond';
+  font-style: 'italic';
+  font-weight: 900;
+}
+
+.vol-where {
+  font-size: 20px;
+  position: relative;
+  top: 12px;
+  color: #626269;
+  font-family: 'EB Garamond';
+  font-style: 'italic';
+}
+
+.div-2 {
+  position: relative;
+  top: 7vh;
+}
+
+.div-4 {
+  position: relative;
+  top: 1vh;
+}
+
+.a-2-2 {
+  position: relative;
+  top: -12px;
+}
+
+.ul-2 {
+  position: relative;
+  list-style-type: disc;
+  left: -7vh;
+  top: -10vh;
+}
+
+.ul-2-1 {
+  position: relative;
+  list-style-type: disc;
+  left: -7vh;
+  top: -10vh;
+}
+
+li.a-2-4 {
+  overflow: hidden;
+  position: relative;
+  padding: 0px 0px 10px 35px;
+  position: relative;
+  top: -7vh;
+}
+li.a-2-4::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 320px;
+  left: 9px;
+  top: 30px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-width: 2px 0 0 2px;
+}
+li.a-2-4::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 21px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-radius: 50%;
+}
+li.a-2-5 {
+  overflow: hidden;
+  position: relative;
+  padding: 0px 0px 10px 35px;
+  top: -6vh;
+}
+li.a-2-5::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 685px;
+  left: 9px;
+  top: 30px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-width: 2px 0 0 2px;
+}
+li.a-2-5::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 21px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-radius: 50%;
+}
+
+.div-7 {
+  position: relative;
+  top: 20px;
+}
+
+.proj-2-title {
+  position: relative;
+  top: 1px;
+  left: -5px;
+  font-size: 30px;
+  font-family: EB Garamond;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.proj-2-web {
+  position: relative;
+  top: 5px;
+  left: 0px;
+  font-family: 'EB Garamond';
+  font-size: 2.5vh;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+.div-8 {
+  position: relative;
+  top: -2.5vh;
+}
+
+.proj-2-tech {
+  position: relative;
+  top: 10px;
+  left: -5px;
+  font-family: 'EB Garamond';
+  font-size: 2.5vh;
+  font-style: italic;
+  padding-bottom: 30px;
+}
+
+.proj-2-desc {
+  font-family: 'EB Garamond';
+  color: #393a3b;
+  font-style: normal;
+  font-size: 18px;
+}
+
+/* Portfolio Section Styling */
+#portfolio {
+  display: block;
+  height: 220vh;
+  background-size: cover;
+  background-image: url(../public/images/img-5.jpeg);
+  background-attachment: fixed;
+}
+
+.port-title {
+  font-size: 75px;
+  font-weight: 900;
+  font-family: 'EB Garamond';
+  top: 20vh;
+  left: -25vh;
+}
+
+.port-border {
+  border-bottom: 5px solid aqua;
+  position: relative;
+  left: 0vh;
+  top: -4vh;
+  width: 37vh;
+}
+
+.port-width {
+  width: 100%;
+}
+
+.port-size {
+  font-size: 18px;
+}
+
+.portfolio-1 {
+  padding: 50px 100px;
+  position: relative;
+  left: 2vh;
+}
+
+.project {
+  width: 100%;
+  height: 40vh;
+  margin: 40px 20px;
+  border: 2px solid rgb(242, 242, 242);
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/*  Contact Section Styling */
+#contact {
+  height: 100vh;
+  background-size: cover; 
+  background-attachment: fixed;
+  background-image: url(./img/93874765-tech-corporate-paper-grey-squares-background.jpeg);
+}
+
+.contact-border {
+  border-bottom: 5px solid aqua;
+  position: relative;
+  top: 2vh;
+  left: 10vh;
+  width: 38vh;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border: 1px solid black;
+}
+
+
+
+
+@media (max-width: 1300px) {
   .resume {
-    height: 1500px;
-    position: relative;
-    left: 10vh;
+    height: 1750px;
   }
 
-  .n-1 {
-    position: relative;
-    top: 15px;
-    left: -5px;
-    font-size: 30px;
-    font-family: 'EB Garamond';
-    font-style: italic;
-    font-weight: 900;
-    padding-bottom: 10px;
-  }
-
-  ul.a-2 {
-    list-style: square;
-    margin: 50px;
-    padding: 0;
-    font: normal 16px/22px Arial;
-    color: #999;
-  }
-  li.a-2 {
-    overflow: hidden;
-    position: relative;
-    padding: 0px 0px 10px 35px;
-    top: 15px;
-  }
   li.a-2::before {
     content: '';
     position: absolute;
     width: 20px;
-    height: 415px;
+    height: 360px;
     left: 9px;
     top: 30px;
     background: #fff;
     border: 2px solid #1f5297;
     border-width: 2px 0 0 2px;
-  }
-  li.a-2::after {
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: 21px;
-    width: 18px;
-    height: 18px;
-    background: #fff;
-    border: 2px solid #1f5297;
-    border-radius: 50%;
-  }
-  li.a-2-1 {
-    overflow: hidden;
-    position: relative;
-    padding: 0px 0px 10px 35px;
-    top: -1vh;
-  }
-  li.a-2-1::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 415px;
-    left: 9px;
-    top: 30px;
-    background: #fff;
-    border: 2px solid #1f5297;
-    border-width: 2px 0 0 2px;
-  }
-  li.a-2-1::after {
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: 21px;
-    width: 18px;
-    height: 18px;
-    background: #fff;
-    border: 2px solid #1f5297;
-    border-radius: 50%;
-  }
-  li.a-3 {
-    overflow: hidden;
-    position: relative;
-    padding: 0px 0px 10px 35px;
-  }
-  li.a-3::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 190px;
-    left: 9px;
-    top: 30px;
-    background: #fff;
-    border: 2px solid #1f5297;
-    border-width: 2px 0 0 2px;
-  }
-  li.a-3::after {
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: 21px;
-    width: 18px;
-    height: 18px;
-    background: #fff;
-    border: 2px solid #1f5297;
-    border-radius: 50%;
-  }
-  li.a-2-2 {
-    list-style-type: none;
-    position: relative;
-    padding: 0px 0px 10px 35px;
-    top: 15px;
   }
   li.a-2-2::before {
     content: '';
     position: absolute;
     width: 20px;
-    height: 470px;
+    height: 690px;
     left: 9px;
     top: 30px;
     background: #fff;
     border: 2px solid #1f5297;
     border-width: 2px 0 0 2px;
-  }
-  li.a-2-2::after {
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: 21px;
-    width: 18px;
-    height: 18px;
-    background: #fff;
-    border: 2px solid #1f5297;
-    border-radius: 50%;
-  }
-  li.a-2-3 {
-    list-style-type: none;
-    position: relative;
-    padding: 0px 0px 10px 35px;
-  }
-  li.a-2-3::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 297px;
-    left: 9px;
-    top: 30px;
-    background: #fff;
-    border: 2px solid #1f5297;
-    border-width: 2px 0 0 2px;
-  }
-  li.a-2-3::after {
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: 21px;
-    width: 18px;
-    height: 18px;
-    background: #fff;
-    border: 2px solid #1f5297;
-    border-radius: 50%;
-  }
-
-  .div-5 {
-    position: relative;
-    top: 12px;
-  }
-
-  .proj-1-title {
-    position: relative;
-    left: -5px;
-    top: 8px;
-    font-family: 'EB Garamond';
-    font-style: italic;
-    font-size: 30px;
-    font-weight: bold;
-  }
-
-  .proj-1-web {
-    position: relative;
-    top: 10px;
-    font-family: 'EB Garamond';
-    font-style: italic;
-    font-size: 2.5vh;
-    padding-bottom: 5px;
-  }
-
-  .proj-1-tech {
-    position: relative;
-    top: 10px;
-    left: -5px;
-    font-family: 'EB Garamond';
-    font-style: italic;
-    font-size: 2.5vh;
-    padding-bottom: 30px;
-  }
-
-  .proj-1-desc {
-    font-style: normal;
-    font-family: 'EB Garamond';
-    font-size: 18px;
-    color: #393a3b;
-  }
-
-  .div-6 {
-    position: relative;
-    top: -8px;
-  }
-
-  #col-1 {
-    transition-duration: 2s;
-  }
-  #col-2 {
-    transition-duration: 2s;
-  }
-  nav .container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 10px;
-  }
-  nav .container ul li {
-    display: inline-block;
-  }
-  nav .container ul li.active a {
-    color: #f38a8a;
-    border-bottom: 3px solid #f38a8a;
-  }
-  nav .container ul a:hover {
-    color: #f38a8a;
-  }
-  nav .container ul li a {
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px 20px;
-    color: black;
-  }
-
-  ul {
-    list-style: none;
-    margin: 50px;
-    padding: 0;
-    font: normal 16px/22px Arial;
-    color: #999;
-  }
-  li {
-    overflow: hidden;
-    position: relative;
-    padding: 0 0 10px 35px;
-  }
-  li::before {
-    content: '';
-    position: absolute;
-    left: 9px;
-    top: 9px;
-    width: 20px;
-    height: 999px;
-    border: 2px solid lightblue;
-    border-width: 2px 0 0 2px;
-  }
-
-  #d_div {
-    position: relative;
-  }
-
-  .div-1 {
-    position: relative;
-    top: 4vh;
-  }
-
-  .school-txt {
-    position: relative;
-    top: -15px;
-    font-family: 'EB Garamond';
-    color: #393a3b;
-    word-spacing: 3px;
-  }
-
-  .school-loc {
-    font-family: 'EB Garamond';
-    font-style: italic;
-    color: #9d9da1;
-    word-spacing: 3px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  .school-desc {
-    font-family: 'EB Garamond';
-    font-style: normal;
-    word-spacing: 3px;
-    font-size: 20px;
-    position: relative;
-    top: -1vh;
-  }
-
-  li.a-1-1 {
-    margin: 4px 0;
-    list-style-type: disc;
-    color: #393a3b;
-    font-size: 22px;
-    font-family: 'Garamond';
-    font-style: italic;
-  }
-
-  .p-1 {
-    position: relative;
-    padding: 15px 0px;
-    font-size: 25px;
-    top: 10px;
-    font-family: 'EB Garamond';
-    color: grey;
-    font-weight: 300;
-    word-spacing: 2px;
-  }
-
-  .a-1 {
-    position: relative;
-    top: -7vh;
-    left: -7vh;
-  }
-
-  h4 {
-    line-height: 18px;
-    font-size: 2.5009rem;
-    font-weight: 550;
-    word-spacing: 0;
-    font-family: 'Poppins', sans-serif;
-    color: #6b6b6e;
-    margin-bottom: 10px;
-  }
-
-  .major {
-    font-size: 30px;
-    position: relative;
-    top: 12px;
-    color: #626269;
-    left: -5px;
-    font-family: 'EB Garamond';
-    font-style: italic;
-    font-weight: 900;
-  }
-
-  .minor {
-    font-size: 25px;
-    position: relative;
-    top: 12px;
-    color: #626269;
-    left: -5px;
-    font-family: 'EB Garamond';
-    font-style: italic;
-    font-weight: 900;
-  }
-
-  .volunteer-loc {
-    position: relative;
-    top: 12px;
-    color: #626269;
-    left: -5px;
-    font-family: 'EB Garamond';
-    font-style: italic;
-    font-size: 30px;
-    font-weight: bold;
-  }
-
-  .volunteer {
-    position: relative;
-    top: 20px;
-  }
-
-  .div-3 {
-    position: relative;
-    top: -15px;
-    color: #393a3b;
-    font-family: 'Garamond';
-    word-spacing: 3px;
-  }
-
-  .vol-loc {
-    font-family: 'EB Garamond';
-    font-style: italic;
-    font-size: 18px;
-    font-weight: bold;
-    word-spacing: 3px;
-    color: #9d9da1;
-  }
-
-  .vol-desc {
-    font-family: 'EB Garamond';
-    font-style: normal;
-    font-size: 21px;
-    word-spacing: 3px;
-    position: relative;
-    top: -1vh;
-  }
-
-  .ul-3 {
-    position: relative;
-    top: -5vh;
-    left: -7vh;
-  }
-
-  .li-1 {
-    font-family: 'EB Garamond';
-    font-style: italic;
-    font-size: 19px;
-    color: #393a3b;
-    list-style-type: disc;
-  }
-
-  h5 {
-    position: relative;
-    top: -12px;
-    font-size: 17px;
-    background: #e4edf9;
-    padding: 5px 15px;
-    display: inline-block;
-    font-weight: 900;
-    margin-bottom: 10px;
-    font-family: 'EB Garamond';
-  }
-
-  .h5-1 {
-    font-family: EB Garamond;
-    position: relative;
-    top: -3vh;
-  }
-
-  .h-3 {
-    font-size: 43px;
-    position: relative;
-    top: 25px;
-    color: black;
-    font-family: 'EB Garamond';
-    font-weight: 900;
-  }
-
-  .h-3-1 {
-    font-size: 43px;
-    position: relative;
-    top: 0vh;
-    color: black;
-    font-family: 'EB Garamond';
-    font-style: 'italic';
-    font-weight: 900;
-  }
-
-  .h-3-2 {
-    font-size: 43px;
-    position: relative;
-    top: -6vh;
-    color: black;
-    font-family: 'EB Garamond';
-    font-style: 'italic';
-    font-weight: 900;
-  }
-
-  .vol-where {
-    font-size: 20px;
-    position: relative;
-    top: 12px;
-    color: #626269;
-    font-family: 'EB Garamond';
-    font-style: 'italic';
-  }
-
-  .div-2 {
-    position: relative;
-    top: 7vh;
-  }
-
-  .div-4 {
-    position: relative;
-    top: 1vh;
-  }
-
-  .a-2-2 {
-    position: relative;
-    top: -12px;
-  }
-
-  .ul-2 {
-    position: relative;
-    list-style-type: disc;
-    left: -7vh;
-    top: -10vh;
-  }
-
-  .ul-2-1 {
-    position: relative;
-    list-style-type: disc;
-    left: -7vh;
-    top: -10vh;
-  }
-
-  li.a-2-4 {
-    overflow: hidden;
-    position: relative;
-    padding: 0px 0px 10px 35px;
-    position: relative;
-    top: -7vh;
   }
   li.a-2-4::before {
     content: '';
     position: absolute;
     width: 20px;
-    height: 320px;
+    height: 370px;
     left: 9px;
     top: 30px;
     background: #fff;
     border: 2px solid #1f5297;
     border-width: 2px 0 0 2px;
   }
-  li.a-2-4::after {
+  li.a-2-4::before {
     content: '';
     position: absolute;
-    left: 0px;
-    top: 21px;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 380px;
+    left: 9px;
+    top: 30px;
     background: #fff;
     border: 2px solid #1f5297;
-    border-radius: 50%;
-  }
-  li.a-2-5 {
-    overflow: hidden;
-    position: relative;
-    padding: 0px 0px 10px 35px;
-    top: -6vh;
+    border-width: 2px 0 0 2px;
   }
   li.a-2-5::before {
     content: '';
     position: absolute;
     width: 20px;
-    height: 685px;
+    height: 900px;
     left: 9px;
     top: 30px;
     background: #fff;
     border: 2px solid #1f5297;
     border-width: 2px 0 0 2px;
   }
-  li.a-2-5::after {
+  .cursor {
+    font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    font-size: 32px;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+}
+@media (max-width: 1115px) {
+  .resume {
+    height: 1900px;
+  }
+  li.a-2::before {
     content: '';
     position: absolute;
-    left: 0px;
-    top: 21px;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 400px;
+    left: 9px;
+    top: 30px;
     background: #fff;
     border: 2px solid #1f5297;
-    border-radius: 50%;
+    border-width: 2px 0 0 2px;
   }
-
-  .div-7 {
-    position: relative;
-    top: 20px;
+  li.a-2-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 690px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
   }
-
-  .proj-2-title {
+  li.a-2-4::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 380px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1050px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  .name {
     position: relative;
-    top: 1px;
-    left: -5px;
-    font-size: 30px;
-    font-family: EB Garamond;
-    font-style: italic;
+    font-weight: 900;
+    font-size: 8vh;
+    padding-bottom: 0px;
+  }
+  .name-1 {
+    font-weight: 900;
+    font-size: 8vh;
+    padding-bottom: 25px;
+  }
+  .title {
+    font-size: 26px;
+    display: 'inline-block';
+    position: absolute;
+  }
+  .cursor {
     font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    font-size: 26px;
+    width: 3px;
+    animation: blink 1s infinite;
   }
-
-  .proj-2-web {
-    position: relative;
-    top: 5px;
-    left: 0px;
-    font-family: "EB Garamond";
-    font-size: 2.5vh;
-    font-style: italic;
-    padding-bottom: 10px;
+}
+@media (max-width: 1025px) {
+  .resume {
+    height: 2030px;
   }
-
-  .div-8 {
-    position: relative;
-    top: -2.5vh;
+  li.a-2-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 690px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
   }
-
-  .proj-2-tech {
-    position: relative;
-    top: 10px;
-    left: -5px;
-    font-family: "EB Garamond";
-    font-size: 2.5vh;
-    font-style: italic;
-    padding-bottom: 30px;
+  li.a-2-4::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 420px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
   }
-
-  .proj-2-desc {
-    font-family: "EB Garamond";
-    color: #393a3b;
-    font-style: normal;
-    font-size: 18px;
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1130px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
   }
-
-  /* Portfolio Section Styling */
+}
+@media (max-width: 991px) {
+  .resume {
+    height: 3300px;
+  }
+  .about {
+    height: 160vh;
+  }
   .portfolio {
     display: block;
-    height: 220vh;
+    height: 300vh;
     background-size: cover;
     background-image: url(../public/images/img-5.jpeg);
     background-attachment: fixed;
   }
-
-  .port-title {
-    font-size: 75px;
-    font-weight: 900;
-    font-family: 'EB Garamond';
-    position: relative;
-    top: 20vh;
-    left: -25vh;
+  li.a-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 342px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
   }
-
-  .port-border {
-    border-bottom: 5px solid aqua;
-    position: relative;
-    left: -26vh;
-    top: 18vh;
-    width: 37vh;
+  li.a-2-4::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 370px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
   }
-
-  .port-shift {
-    position: relative;
-    left: 35vh;
-    top: 25vh;
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 970px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
   }
-
-  .port-width {
-    width: 100%;
+}
+@media (max-width: 800px) {
+  .resume {
+    height: 3500px;
   }
-
-  .port-size {
-    font-size: 18px;
+  li.a-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 380px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
   }
-
-  .portfolio-1 {
-    padding: 50px 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    text-align: center;
-    top: -13vh;
-    left: -40vh;
+  li.a-2-4::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 400px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
   }
-
-  .project {
-    width: 100%;
-    height: 40vh;
-    margin: 40px 20px;
-    border: 2px solid rgb(242, 242, 242);
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1020px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
   }
-
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .resume {
+    height: 2800px;
   }
-
-  /*  Contact Section Styling */
-  .contact {
-    height: 100vh;
+  li.a-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 330px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  .portfolio {
+    display: block;
+    height: 550vh;
     background-size: cover;
+    background-image: url(../public/images/img-5.jpeg);
     background-attachment: fixed;
-    background-image: url(./img/93874765-tech-corporate-paper-grey-squares-background.jpeg);
   }
-/* }
-@media (max-width: 1180px) {
+  .about {
+    height: 220vh;
+  }
 }
-@media (max-width: 1180px) {
+@media (max-width: 750px) { 
+  .name {
+    position: relative;
+    font-weight: 900;
+    font-size: 8vh;
+    padding-bottom: 0px;
+  }
+  .name-1 {
+    font-weight: 900;
+    font-size: 8vh;
+    padding-bottom: 25px;
+  }
+  .title {
+    font-size: 32px;
+    display: 'inline-block';
+    position: absolute;
+  }
+  .greeting {
+    position: relative;
+    top: 3vh;
+    font-size: 25px;
+    padding-bottom: 25px;
+    font-weight: bolder;
+  }
+  .intro-text {
+    position: relative;
+    left: -10vh;
+  }
+  .cursor {
+    font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    font-size: 32px;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+} 
+@media (max-width: 700px) {
+  .name {
+    position: relative;
+    font-weight: 900;
+    font-size: 6vh;
+    padding-bottom: 0px;
+  }
+  .name-1 {
+    font-weight: 900;
+    font-size: 6vh;
+    padding-bottom: 25px;
+  }
+  .title {
+    font-size: 25px;
+    display: 'inline-block';
+    position: absolute;
+  }
+  .greeting {
+    position: relative;
+    top: 3vh;
+    font-size: 25px;
+    padding-bottom: 25px;
+    font-weight: bolder;
+  }
+  .cursor {
+    font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    font-size: 25px;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .portfolio {
+    display: block;
+    height: 500vh;
+    background-size: cover;
+    background-image: url(../public/images/img-5.jpeg);
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 670px) {
+  .resume {
+    height: 3000px;
+  }
 
 }
-@media (max-width: 1180px) {
-
+@media (max-width: 591px) {
+  .name {
+    position: relative;
+    font-weight: 900;
+    font-size: 5vh;
+    padding-bottom: 0px;
+  }
+  .name-1 {
+    font-weight: 900;
+    font-size: 5vh;
+    padding-bottom: 25px;
+  }
+  .title {
+    font-size: 20px;
+    display: 'inline-block';
+    position: absolute;
+  }
+  .greeting {
+    position: relative;
+    top: 3vh;
+    font-size: 25px;
+    padding-bottom: 25px;
+    font-weight: bolder;
+  }
+  .cursor {
+    font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    font-size: 20px;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .resume {
+    height: 3200px;
+  }
+  .portfolio {
+    display: block;
+    height: 470vh;
+    background-size: cover;
+    background-image: url(../public/images/img-5.jpeg);
+    background-attachment: fixed;
+  }
 }
-@media (max-width: 800px) { */
-  /* Smaller Resolution Desktops and Laptops */
-  /* [...] */
-/* } */
-/* @media (max-width: 650px) { */
-  /* Smaller devices */
-  /* [...] */
-/* } */
-/* @media (max-width: 450px) { */
-  /* Even Smaller devices */
-  /* [...] */
-/* } */
-/* @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { */
-  /* Even Smaller devices */
-  /* [...] */
-/* } */
+@media (max-width: 547px) {
+  .resume {
+    height: 3500px;
+  }
+  .name {
+    position: relative;
+    font-weight: 900;
+    font-size: 4.5vh;
+    padding-bottom: 0px;
+  }
+  .name-1 {
+    font-weight: 900;
+    font-size: 4.5vh;
+    padding-bottom: 25px;
+  }
+  .title {
+    font-size: 20px;
+    display: 'inline-block';
+    position: absolute;
+  }
+  .greeting {
+    position: relative;
+    top: 3vh;
+    font-size: 18px;
+    padding-bottom: 25px;
+    font-weight: bolder;
+  }
+  .cursor {
+    font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    font-size: 20px;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .portfolio {
+    display: block;
+    height: 450vh;
+    background-size: cover;
+    background-image: url(../public/images/img-5.jpeg);
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 490px) { 
+  .resume {
+    height: 5200px;
+  }
+  .about {
+    height: 250vh;
+  }
+  .name {
+    position: relative;
+    font-weight: 900;
+    font-size: 5vh;
+    padding-bottom: 0px;
+  }
+  .name-1 {
+    font-weight: 900;
+    font-size: 5vh;
+    padding-bottom: 25px;
+  }
+  .title {
+    font-size: 16px;
+    display: 'inline-block';
+    position: absolute;
+  }
+  .greeting {
+    position: relative;
+    top: 1.5vh;
+    font-size: 16px;
+    padding-bottom: 25px;
+    font-weight: bolder;
+  }
+  .cursor {
+    font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    font-size: 16px;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .portfolio {
+    display: block;
+    height: 500vh;
+    background-size: cover;
+    background-image: url(../public/images/img-5.jpeg);
+    background-attachment: fixed;
+  }
+  li.a-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 620px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  li.a-2-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1500px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  li.a-2-4::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 650px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1750px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+} 

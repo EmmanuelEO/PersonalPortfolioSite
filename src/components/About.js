@@ -11,9 +11,9 @@ import { Card, Col, Container, Row } from 'react-bootstrap'
 
 const About = () => {
   return (
-    <section className='about'>
+    <section id='about'>
       <div className='about-description'>
-        <div className='about-text'>
+        <div>
           <p className='about-para'>About Me: </p>
           <p className='para-border'></p>
         </div>
