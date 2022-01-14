@@ -72,34 +72,19 @@ const Intro = () => {
         <div className='left'>
           <div className='my-background-2'></div>
           <div className='inside-left'>
-            <div style={{ position: 'relative', left: '-7vh' }}>
+            <div className='inside-left-intro'>
               <h2
                 className='greeting'
-                style={{
-                  paddingBottom: '25px',
-                  fontWeight: 'bolder',
-                  fontSize: '5vh',
-                }}
               >
                 Hello! I'm
               </h2>
               <p
                 className='name'
-                style={{
-                  fontWeight: '900',
-                  fontSize: '11vh',
-                  paddingBottom: '0px',
-                }}
               >
                 Emmanuel
               </p>
               <p
-                className='name'
-                style={{
-                  fontWeight: '900',
-                  fontSize: '11vh',
-                  paddingBottom: '25px',
-                }}
+                className='name-1'
               >
                 Okonkwo
               </p>
@@ -107,22 +92,16 @@ const Intro = () => {
             <div>
               <span
                 className='title'
-                style={{
-                  fontSize: '47px',
-                  left: '-8vh',
-                  display: 'inline-block',
-                }}
               >
-                <span style={{ postion: 'relative', fontSize: '6.5vh' }}>
+                <span>
                   and I'm&nbsp;
                 </span>
                 <span
-                  style={{ position: 'static' }}
                   className='text-type'
                   data-wait='3000'
                   data-words='["a Creator", "a Developer", "a Designer", "an Engineer", "a Learner"]'
                 ></span>
-                <span style={{ fontSize: '47px' }} className='cursor'>
+                <span className='cursor'>
                   &nbsp;
                 </span>
               </span>

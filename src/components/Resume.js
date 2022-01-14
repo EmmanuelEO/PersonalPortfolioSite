@@ -9,228 +9,38 @@ const Resume = () => {
         <p className='resume-border'></p>
       </div>
       <Row className='resume-detail'>
-        <Col md={6} id='col-1' data-aos='fade-right' data-aos-delay='500'>
+        <Col sm={12} md={8} lg={6} id='col-1' data-aos='fade-right' data-aos-delay='500'>
           <ul className='a-2'>
-            <h3 className='h-3' style={{}}>
-              Summary
-            </h3>
-            <li className='a-2' style={{ position: 'relative', top: '15px' }}>
-              <h4
-                style={{
-                  position: 'relative',
-                  top: '10px',
-                  left: '-5px',
-                  fontSize: '30px',
-                  fontFamily: 'EB Garamond',
-                  fontStyle: 'italic',
-                  fontWeight: '900',
-                }}
-              >
-                &nbsp;Name: Emmanuel Okonkwo
-              </h4>
-              <p
-                className='p-1'
-                style={{
-                  color: '#393a3b',
-                  fontFamily: 'EB Garamond',
-                  fontStyle: 'normal',
-                  fontSize: '25px',
-                  fontWeight: '300',
-                  color: 'grey',
-                  wordSpacing: '2px',
-                }}
-              >
-                Innovative, deadline-driven, and passion
-              </p>
-              <p
-                className='p-1'
-                style={{
-                  color: '#393a3b',
-                  fontFamily: 'EB Garamond',
-                  fontStyle: 'normal',
-                  fontSize: '25px',
-                  fontWeight: '300',
-                  color: 'grey',
-                  wordSpacing: '2px',
-                  position: 'relative',
-                  top: '-1.5vh',
-                }}
-              >
-                -driven Student, Software Engineer and
-              </p>
-              <p
-                className='p-1'
-                style={{
-                  color: '#393a3b',
-                  fontFamily: 'EB Garamond',
-                  fontStyle: 'normal',
-                  fontSize: '25px',
-                  fontWeight: '300',
-                  color: 'grey',
-                  wordSpacing: '2px',
-                  position: 'relative',
-                  top: '-4.2vh',
-                }}
-              >
-                Developer with 3+ years of programming
-              </p>
-              <p
-                className='p-1'
-                style={{
-                  color: '#393a3b',
-                  fontFamily: 'EB Garamond',
-                  fontStyle: 'normal',
-                  fontSize: '25px',
-                  fontWeight: '300',
-                  color: 'grey',
-                  wordSpacing: '2px',
-                  position: 'relative',
-                  top: '-6.3vh',
-                }}
-              >
-                experience. The relevant courses I've taken
-              </p>
-              <p
-                className='p-1'
-                style={{
-                  color: '#393a3b',
-                  fontFamily: 'EB Garamond',
-                  fontStyle: 'normal',
-                  fontSize: '25px',
-                  fontWeight: '300',
-                  color: 'grey',
-                  wordSpacing: '2px',
-                  position: 'relative',
-                  top: '-8vh',
-                }}
-              >
-                include:
-              </p>
+            <h3 className='h-3'>Summary</h3>
+            <li className='a-2'>
+              <h4 className='n-1'>&nbsp;Name: Emmanuel Okonkwo</h4>
+              <div className='p-1'>
+                <p>Innovative, deadline-driven, and passion</p>
+                <p>-driven Student, Software Engineer and</p>
+                <p>Developer with 3+ years of programming</p>
+                <p>experience. The relevant courses I've taken</p>
+                <p>include:</p>
+              </div>
               <ul className='a-1'>
-                <li
-                  className='a-1-1'
-                  style={{
-                    listStyleType: 'disc',
-                    color: '#393a3b',
-                    fontFamily: "'Garamond'",
-                    fontSize: '22px',
-                    fontStyle: 'italic',
-                  }}
-                >
-                  Operating Systems
-                </li>
-                <li
-                  className='a-1-1'
-                  style={{
-                    listStyleType: 'disc',
-                    color: '#393a3b',
-                    fontSize: '22px',
-                    fontFamily: "'Garamond'",
-                    fontStyle: 'italic',
-                  }}
-                >
-                  Software Engineering
-                </li>
-                <li
-                  className='a-1-1'
-                  style={{
-                    listStyleType: 'disc',
-                    color: '#393a3b',
-                    fontSize: '22px',
-                    fontFamily: "'Garamond'",
-                    fontStyle: 'italic',
-                  }}
-                >
-                  Data Structures and Algorithms
-                </li>
-                <li
-                  className='a-1-1'
-                  style={{
-                    listStyleType: 'disc',
-                    color: '#393a3b',
-                    fontSize: '22px',
-                    fontFamily: "'Garamond'",
-                    fontStyle: 'italic',
-                  }}
-                >
-                  Design and Analysis of Algorithms
-                </li>
-                <li
-                  className='a-1-1'
-                  style={{
-                    listStyleType: 'disc',
-                    color: '#393a3b',
-                    fontSize: '22px',
-                    fontFamily: "'Garamond'",
-                    fontStyle: 'italic',
-                  }}
-                >
-                  Database Systems
-                </li>
+                <li className='a-1-1'>Operating Systems</li>
+                <li className='a-1-1'>Software Engineering</li>
+                <li className='a-1-1'>Data Structures and Algorithms</li>
+                <li className='a-1-1'>Design and Analysis of Algorithms</li>
+                <li className='a-1-1'>Database Systems</li>
               </ul>
             </li>
 
-            <h3 className='h-3-1' style={{ fontWeight: 'bold', position: 'relative', top: '-7vh' }}>
-              Education
-            </h3>
-            <li style={{ position: 'relative', top: '-8vh' }} className='a-2'>
-              <h4
-                style={{
-                  position: 'relative',
-                  top: '12px',
-                  left: '-5px',
-                  color: '#626269',
-                  fontFamily: 'EB Garamond',
-                  fontWeight: 'bold',
-                  fontSize: '30px',
-                  fontStyle: 'italic',
-                }}
-              >
-                &nbsp;Bachelor of Computer Engineering
-              </h4>
-              <h4
-                style={{
-                  position: 'relative',
-                  top: '12px',
-                  left: '-5px',
-                  color: '#626269',
-                  fontFamily: "'Garamond'",
-                  fontStyle: 'italic',
-                }}
-              >
-                (with Computing Science Minor)
-              </h4>
-              <div style={{ position: 'relative', top: '15px' }}>
+            <h3 className='h-3-1'>Education</h3>
+            <li className='a-2-1'>
+              <h4 className='major'>&nbsp;Bachelor of Computer Engineering</h4>
+              <h4 className='minor'>(with Computing Science Minor)</h4>
+              <div className='div-1'>
                 <h5>2019 - 2024</h5>
-                <div
-                  style={{
-                    position: 'relative',
-                    top: '-15px',
-                    fontFamily: "'Garamond'",
-                    wordSpacing: '3px',
-                    color: '#393a3b',
-                  }}
-                >
-                  <p
-                    style={{
-                      fontFamily: "'Garamond'",
-                      fontStyle: 'italic',
-                      wordSpacing: '3px',
-                      fontSize: '18px',
-                      color: '#9d9da1',
-                      fontWeight: 'bold',
-                    }}
-                  >
+                <div className='school-txt'>
+                  <p className='school-loc'>
                     Simon Fraser University (SFU), BC, Canada.
                   </p>
-                  <p
-                    style={{
-                      fontFamily: 'EB Garamond',
-                      fontStyle: 'normal',
-                      wordSpacing: '3px',
-                      fontSize: '20px',
-                    }}
-                  >
+                  <p className='school-desc'>
                     - I'm pursuing a degree in computer engineering and I also
                     undertake a minor in Computing Science. I intend to take
                     classes like: Distributed Systems, Embedded Systems,
@@ -240,207 +50,80 @@ const Resume = () => {
               </div>
             </li>
 
-            <h3 className='h-3-1' style={{ fontWeight: 'bold', position: 'relative', top: '-6vh' }}>
-              Volunteer Experience
-            </h3>
-            <li
-              style={{ position: 'relative', top: '-7vh' }}
-              className='a-2-4'
-            >
-              <h4
-                style={{
-                  position: 'relative',
-                  top: '12px',
-                  left: '-5px',
-                  color: '#626269',
-                  fontFamily: "'Garamond'",
-                  fontStyle: 'italic',
-                }}
-              >
-                &nbsp;Beth Torrey Home
-              </h4>
-              <h4
-                style={{
-                  position: 'relative',
-                  top: '12px',
-                  left: '-5px',
-                  color: '#626269',
-                  fontSize: '20px',
-                  fontFamily: "'Garamond'",
-                  fontStyle: 'italic',
-                }}
-              >
-                &nbsp;(home for people with dementia problems)
-              </h4>
-              <div style={{ position: 'relative', top: '15px' }}>
-                <h5>2016</h5>
-                <div
-                  style={{
-                    position: 'relative',
-                    top: '-15px',
-                    fontFamily: "'Garamond'",
-                    wordSpacing: '3px',
-                    color: '#393a3b',
-                  }}
-                >
-                  <p
-                    style={{
-                      fontFamily: "'Garamond'",
-                      fontStyle: 'italic',
-                      wordSpacing: '3px',
-                      fontSize: '18px',
-                      color: '#9d9da1',
-                      fontWeight: 'bold',
-                    }}
-                  >
-                    Located at: Festac, Lagos, Nigeria.
-                  </p>
-                  <p
-                    style={{
-                      fontFamily: 'EB Garamond',
-                      fontStyle: 'normal',
-                      wordSpacing: '3px',
-                      fontSize: '21px',
-                    }}
-                  >
-                    - Throughout this period, I led the initiative to come up
-                    with ideas on ways to help the people with dementia to make
-                    them feel better. I majorly assisted by:
-                    <ul
-                      style={{
-                        position: 'relative',
-                        top: '-5vh',
-                        left: '-7vh',
-                      }}
-                    >
-                      <li
-                        style={{
-                          listStyleType: 'disc',
-                          color: '#393a3b',
-                          fontFamily: "'Garamond'",
-                          fontSize: '19px',
-                          fontStyle: 'italic',
-                        }}
-                      >
-                        Organizing lessons to teach them how to communicate
-                        clearly and coherently to other people.
-                      </li>
-                      <li
-                        style={{
-                          listStyleType: 'disc',
-                          color: '#393a3b',
-                          fontSize: '19px',
-                          fontFamily: "'Garamond'",
-                          fontStyle: 'italic',
-                        }}
-                      >
-                        Scheduling sessions to teach them how to make bags and
-                        jewelry.
-                      </li>
-                    </ul>
-                  </p>
+            <div className='div-2'>
+              <h3 className='h-3-2'>Volunteer Experience</h3>
+              <li className='a-2-4'>
+                <div className='div-4'>
+                  <h4 className='volunteer-loc'>&nbsp;Beth Torrey Home</h4>
+                  <h4 className='vol-where'>
+                    &nbsp;(home for people with dementia problems)
+                  </h4>
+                  <div className='volunteer'>
+                    <h5>2016</h5>
+                    <div className='div-3'>
+                      <p className='vol-loc'>
+                        Located at: Festac, Lagos, Nigeria.
+                      </p>
+                      <p className='vol-desc'>
+                        - Throughout this period, I led the initiative to come
+                        up with ideas on ways to help the people with dementia
+                        to make them feel better. I majorly assisted by:
+                        <ul className='ul-3'>
+                          <li className='li-1'>
+                            Organizing lessons to teach them how to communicate
+                            clearly and coherently to other people.
+                          </li>
+                          <li className='li-1'>
+                            Scheduling sessions to teach them how to make bags
+                            and jewelry.
+                          </li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </li>
+              </li>
+            </div>
           </ul>
         </Col>
 
-        <Col id='col-2' md={6} data-aos='fade-left' data-aos-delay='2000'>
+        <Col id='col-2' sm={12} md={8} lg={6} data-aos='fade-left' data-aos-delay='2000'>
           <ul className='a-2'>
-            <h3 className='h-3' style={{ fontFamily: 'EB Garamond' }}>
-              Projects
-            </h3>
-            <li className='a-2-2' style={{ position: 'relative', top: '15px' }}>
-              <p style={{ position: 'relative', top: '0px' }}>
-                <h4
-                  style={{
-                    position: 'relative',
-                    top: '8px',
-                    left: '-5px',
-                    fontFamily: 'EB Garamond',
-                    fontStyle: 'italic',
-                    fontSize: '30px',
-                    fontWeight: 'bold',
-                  }}
-                >
-                  &nbsp;E-commerce Application
-                </h4>
-                <h4
-                  style={{
-                    position: 'relative',
-                    top: '10px',
-                    left: '0px',
-                    fontFamily: "'Garamond'",
-                    fontSize: '2.5vh',
-                    fontStyle: 'italic',
-                    paddingBottom: '10px',
-                  }}
-                >
+            <h3 className='h-3'>Projects</h3>
+            <li className='a-2-2'>
+              <div className='div-5'>
+                <h4 className='proj-1-title'>&nbsp;E-commerce Application</h4>
+                <h4 className='proj-1-web'>
                   Website:{' '}
-                  <a href='https://shopoutletapp.herokuapp.com/' rel='noreferrer'
-                    target='_blank'>
+                  <a
+                    href='https://shopoutletapp.herokuapp.com/'
+                    rel='noreferrer'
+                    target='_blank'
+                  >
                     https://shopoutletapp.herokuapp.com/
                   </a>
                 </h4>
-                <div style={{ position: 'relative', top: '-8px' }}>
-                  <h4
-                    style={{
-                      position: 'relative',
-                      top: '10px',
-                      left: '-5px',
-                      fontFamily: "'Garamond'",
-                      fontSize: '2.5vh',
-                      fontStyle: 'italic',
-                      paddingBottom: '10px',
-                    }}
-                  >
-                    &nbsp;(Technologies Used):
-                  </h4>
+                <div className='div-6'>
+                  <h4 className='proj-1-tech'>&nbsp;(Technologies Used):</h4>
                   <div>
-                    <h5 style={{ fontFamily: 'EB Garamond' }}>
+                    <h5 className='h5-1'>
                       React, Redux, MongoDB, Express, Git
                     </h5>
                   </div>
-                  <h5
-                    style={{
-                      fontFamily: 'EB Garamond',
-                      position: 'relative',
-                      top: '-3vh',
-                    }}
-                  >
+                  <h5 className='h5-1'>
                     PayPal API, Hooks API, Redux, Postman
                   </h5>
-                  <h5
-                    style={{
-                      fontFamily: 'EB Garamond',
-                      position: 'relative',
-                      top: '-4.5vh',
-                    }}
-                  >
+                  <h5 className='h5-1'>
                     Jsoan Web Token, &nbsp;JWT Authentication, Heroku
                   </h5>
                   <ul className='ul-2-1'>
-                    <li
-                      style={{
-                        fontFamily: 'EB Garamond',
-                        fontStyle: 'normal',
-                        color: '#393a3b',
-                        fontSize: '16px',
-                      }}
-                    >
+                    <li className='proj-1-desc'>
                       Implemented a MERN full stack e-commerce real world app
                       project where customers can login and browse for products
                       with their unique accounts protected by JWT authentication
                       and deployed the complete project to Heroku.
                     </li>
-                    <li
-                      style={{
-                        fontFamily: 'EB Garamond',
-                        fontStyle: 'normal',
-                        color: '#393a3b',
-                        fontSize: '16px',
-                      }}
-                    >
+                    <li className='proj-1-desc'>
                       Established CRUD functionality by testing all of the POST,
                       &nbsp;GET, &nbsp;PUT,&nbsp; and DELETE endpoints and
                       tested these endpoints using Postman while using Redux for
@@ -448,138 +131,57 @@ const Resume = () => {
                     </li>
                   </ul>
                 </div>
-              </p>
+              </div>
             </li>
 
-            <li
-              className='a-2-5'
-              style={{ position: 'relative', top: '-13vh' }}
-            >
-              <p style={{ position: 'relative', top: '11px' }}>
-                <h4
-                  style={{
-                    position: 'relative',
-                    top: '1px',
-                    left: '-5px',
-                    fontSize: '30px',
-                    fontFamily: 'EB Garamond',
-                    fontStyle: 'italic',
-                    fontWeight: 'bold',
-                  }}
-                >
+            <li className='a-2-5'>
+              <div className='div-7'>
+                <h4 className='proj-2-title'>
                   &nbsp;Student Management Application
                 </h4>
-                <h4
-                  style={{
-                    position: 'relative',
-                    top: '10px',
-                    left: '0px',
-                    fontFamily: "'Garamond'",
-                    fontSize: '2.5vh',
-                    fontStyle: 'italic',
-                    paddingBottom: '10px',
-                  }}
-                >
+                <h4 className='proj-2-web'>
                   Website:{' '}
-                  <a href='http://studentmanagementappfullstack-env.eba-6ayfszt3.us-east-1.elasticbeanstalk.com/' rel='noreferrer'
-                    target='_blank'>
+                  <a
+                    href='http://studentmanagementappfullstack-env.eba-6ayfszt3.us-east-1.elasticbeanstalk.com/'
+                    rel='noreferrer'
+                    target='_blank'
+                  >
                     http://studentmanagementappfullstack-env.eba-6ayfszt3.us-east-1.elasticbeanstalk.com/
                   </a>
                 </h4>
-                <div style={{ position: 'relative', top: '-1vh' }}>
-                  <h4
-                    style={{
-                      position: 'relative',
-                      top: '10px',
-                      left: '-5px',
-                      fontFamily: "'Garamond'",
-                      fontSize: '2.5vh',
-                      fontStyle: 'italic',
-                      paddingBottom: '10px',
-                    }}
-                  >
-                    &nbsp;(Technologies Used):
-                  </h4>
+                <div className='div-8'>
+                  <h4 className='proj-2-tech'>&nbsp;(Technologies Used):</h4>
 
-                  <h5 style={{ fontFamily: 'EB Garamond' }}>
-                    Java, Spring Boot, React, Hooks API
+                  <h5 className='h5-1'>Java, Spring Boot, React, Hooks API</h5>
+                  <h5 className='h5-1'>
+                    Gitx, Github Actions (for CI/CD), Docker
                   </h5>
-                  <h5
-                    style={{
-                      fontFamily: 'EB Garamond',
-                      position: 'relative',
-                      top: '3vh',
-                      left: '-33.7vh'
-                    }}
-                  >
-                    Git, Github Actions (for CI/CD), Docker
-                  </h5>
-                  <h5
-                    style={{
-                      fontFamily: 'EB Garamond',
-                      position: 'relative',
-                      top: '2vh',
-                    }}
-                  >
+                  <h5 className='h5-1'>
                     postgreSQL (for Database), Postman API, Maven, Jib
                   </h5>
-                  <h5
-                    style={{
-                      fontFamily: 'EB Garamond',
-                      position: 'relative',
-                      top: '1vh',
-                    }}
-                  >
+                  <h5 className='h5-1'>
                     AWS Elastic Beanstalk, AWS EC2, AWS RDS
                   </h5>
                   <ul className='ul-2'>
-                    <li
-                      style={{
-                        fontFamily: 'EB Garamond',
-                        fontStyle: 'normal',
-                        color: '#393a3b',
-                        fontSize: '16px',
-                      }}
-                    >
+                    <li className='proj-2-desc'>
                       Implemented a full stack app for managing students using
                       Java for the backend and React with Ant Design Framework
                       for the frontend and established CRUD functionality by
                       testing all of the POST, &nbsp;GET, &nbsp;PUT,&nbsp; and
                       DELETE endpoints using Postman.
                     </li>
-                    <li
-                      style={{
-                        fontFamily: 'EB Garamond',
-                        fontStyle: 'normal',
-                        color: '#393a3b',
-                        fontSize: '16px',
-                      }}
-                    >
+                    <li className='proj-2-desc'>
                       Integrated dockerHub and Jib to the application and
                       generated different docker images to push up instances of
                       the application to a docker repo.
                     </li>
-                    <li
-                      style={{
-                        fontFamily: 'EB Garamond',
-                        fontStyle: 'normal',
-                        color: '#393a3b',
-                        fontSize: '16px',
-                      }}
-                    >
+                    <li className='proj-2-desc'>
                       Built a docker container to containerize the complete
                       application while pushing up to AWS Elastic Beanstalk.
                       Integrated postgreSQL database with AWS RDS and pushed up
                       various EC2 instances to Elastic Beanstalk.
                     </li>
-                    <li
-                      style={{
-                        fontFamily: 'EB Garamond',
-                        fontStyle: 'normal',
-                        color: '#393a3b',
-                        fontSize: '16px',
-                      }}
-                    >
+                    <li className='proj-2-desc'>
                       Automated all the steps to the deployment of the after
                       pushing a commit to a new git branch using CI/CD. Using a
                       pre-written build.yml and deploy.yml file, I automated the
@@ -589,7 +191,7 @@ const Resume = () => {
                     </li>
                   </ul>
                 </div>
-              </p>
+              </div>
             </li>
           </ul>
         </Col>
