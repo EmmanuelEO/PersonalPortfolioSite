@@ -1484,12 +1484,12 @@ input {
   .name {
     position: relative;
     font-weight: 900;
-    font-size: 8vh;
+    font-size: 6vh;
     padding-bottom: 0px;
   }
   .name-1 {
     font-weight: 900;
-    font-size: 8vh;
+    font-size: 6vh;
     padding-bottom: 25px;
   }
   .title {
@@ -1533,12 +1533,12 @@ input {
   .name {
     position: relative;
     font-weight: 900;
-    font-size: 6vh;
+    font-size: 5vh;
     padding-bottom: 0px;
   }
   .name-1 {
     font-weight: 900;
-    font-size: 6vh;
+    font-size: 5vh;
     padding-bottom: 25px;
   }
   .title {
@@ -1587,12 +1587,12 @@ input {
   .name {
     position: relative;
     font-weight: 900;
-    font-size: 6vh;
+    font-size: 5vh;
     padding-bottom: 0px;
   }
   .name-1 {
     font-weight: 900;
-    font-size: 6vh;
+    font-size: 5vh;
     padding-bottom: 25px;
   }
   .title {
@@ -1641,12 +1641,12 @@ input {
   .name {
     position: relative;
     font-weight: 900;
-    font-size: 6vh;
+    font-size: 5vh;
     padding-bottom: 0px;
   }
   .name-1 {
     font-weight: 900;
-    font-size: 6vh;
+    font-size: 5vh;
     padding-bottom: 25px;
   }
   .title {
@@ -1706,12 +1706,12 @@ input {
   .name {
     position: relative;
     font-weight: 900;
-    font-size: 6vh;
+    font-size: 5vh;
     padding-bottom: 0px;
   }
   .name-1 {
     font-weight: 900;
-    font-size: 6vh;
+    font-size: 5vh;
     padding-bottom: 25px;
   }
   .title {
@@ -1830,93 +1830,17 @@ input {
 }
 @media (max-width: 547px) {
   #resume {
-    height: 4000px;
-  }
-  .name {
-    position: relative;
-    font-weight: 900;
-    font-size: 4.5vh;
-    padding-bottom: 0px;
-  }
-  .name-1 {
-    font-weight: 900;
-    font-size: 4.5vh;
-    padding-bottom: 25px;
-  }
-  .title {
-    font-size: 20px;
-    display: 'inline-block';
-    position: absolute;
-  }
-  .greeting {
-    position: relative;
-    top: 3vh;
-    font-size: 18px;
-    padding-bottom: 25px;
-    font-weight: bolder;
-  }
-  .cursor {
-    font-weight: bold;
-    position: absolute;
-    display: inline-block;
-    background-color: black;
-    font-size: 20px;
-    width: 3px;
-    animation: blink 1s infinite;
-  }
-  #portfolio {
-    display: block;
-    height: 570vh;
-    background-size: cover;
-    background-image: url(../public/images/img-5.jpeg);
-    background-attachment: fixed;
-  }
-  li.a-2::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 440px;
-    left: 9px;
-    top: 30px;
-    background: #fff;
-    border: 2px solid #1f5297;
-    border-width: 2px 0 0 2px;
-  }
-  li.a-2-5::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 1300px;
-    left: 9px;
-    top: 30px;
-    background: #fff;
-    border: 2px solid #1f5297;
-    border-width: 2px 0 0 2px;
-  }
-  nav .li-2 {
-    border: none;
-    display: inline-block;
-    padding: 5px;
-    font-size: medium;
-    font-weight: bold;
-    transition: all 0.5s;
-    margin-right: 20px;
-    list-style: none;
-  }
-}
-@media (max-width: 547px) {
-  #resume {
     height: 4300px;
   }
   .name {
     position: relative;
     font-weight: 900;
-    font-size: 4.5vh;
+    font-size: 4vh;
     padding-bottom: 0px;
   }
   .name-1 {
     font-weight: 900;
-    font-size: 4.5vh;
+    font-size: 4vh;
     padding-bottom: 25px;
   }
   .title {
@@ -2134,12 +2058,12 @@ input {
   .name {
     position: relative;
     font-weight: 900;
-    font-size: 5vh;
+    font-size: 4vh;
     padding-bottom: 0px;
   }
   .name-1 {
     font-weight: 900;
-    font-size: 5vh;
+    font-size: 4vh;
     padding-bottom: 25px;
   }
   .title {
@@ -2238,12 +2162,12 @@ input {
   .name {
     position: relative;
     font-weight: 900;
-    font-size: 5vh;
+    font-size: 4vh;
     padding-bottom: 0px;
   }
   .name-1 {
     font-weight: 900;
-    font-size: 5vh;
+    font-size: 4vh;
     padding-bottom: 25px;
   }
   .title {
@@ -2342,12 +2266,12 @@ input {
   .name {
     position: relative;
     font-weight: 900;
-    font-size: 5vh;
+    font-size: 3.5vh;
     padding-bottom: 0px;
   }
   .name-1 {
     font-weight: 900;
-    font-size: 5vh;
+    font-size: 3.5vh;
     padding-bottom: 25px;
   }
   .title {
@@ -2453,12 +2377,12 @@ input {
   .name {
     position: relative;
     font-weight: 900;
-    font-size: 4vh;
+    font-size: 3.5vh;
     padding-bottom: 0px;
   }
   .name-1 {
     font-weight: 900;
-    font-size: 4vh;
+    font-size: 3.5vh;
     padding-bottom: 25px;
   }
   .title {
@@ -2547,27 +2471,28 @@ input {
   }
   #resume {
     height: 3900px;
+    overflow-y: scroll;
   }
   .name {
     position: relative;
     font-weight: 900;
-    font-size: 6vh;
+    font-size: 2.4vh;
     padding-bottom: 0px;
   }
   .name-1 {
     font-weight: 900;
-    font-size: 6vh;
+    font-size: 2.4vh;
     padding-bottom: 25px;
   }
   .title {
-    font-size: 20px;
+    font-size: 14px;
     display: 'inline-block';
     position: absolute;
   }
   .greeting {
     position: relative;
     top: 1.5vh;
-    font-size: 20px;
+    font-size: 1.5vh;
     padding-bottom: 25px;
     font-weight: bolder;
   }
@@ -2576,7 +2501,7 @@ input {
     position: absolute;
     display: inline-block;
     background-color: black;
-    font-size: 20px;
+    font-size: 14px;
     width: 3px;
     animation: blink 1s infinite;
   }
