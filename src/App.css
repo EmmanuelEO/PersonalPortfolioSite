@@ -31,7 +31,7 @@ nav .li-2 {
   display: inline-block;
   padding: 5px;
   font-weight: bold;
-  transition: all ease-in-out 0.5s;
+  transition: all 0.5s;
   margin-right: 50px;
   list-style: none;
 }
@@ -68,10 +68,13 @@ nav ul a:hover {
 
 
 /* =Responsive Structure */
-body,
-html {
+body {
   font-family: 'EB Garamond';
   background-color: rgb(245, 240, 240);
+  overflow-y: visible;
+}
+html {
+  overflow-x: hidden;
 }
 
 .main {
@@ -81,8 +84,8 @@ html {
 
 /* Home Section Styling */
 #home {
+  height: 100vh;
   background-size: cover;
-  background-attachment: fixed;
   background-image: url(./img/143999-modern-blue-and-white-square-abstract-background.jpeg);
 }
 
@@ -321,7 +324,7 @@ html {
   top: -8vh;
 }
 
-.resume {
+#resume {
   height: 1500px;
   position: relative;
   left: 10vh;
@@ -977,10 +980,9 @@ li.a-2-5::after {
 
 /*  Contact Section Styling */
 #contact {
-  height: 100vh;
   background-size: cover; 
-  background-attachment: fixed;
   background-image: url(./img/93874765-tech-corporate-paper-grey-squares-background.jpeg);
+  padding: 35px 0px;
 }
 
 .contact-border {
@@ -989,6 +991,20 @@ li.a-2-5::after {
   top: 2vh;
   left: 10vh;
   width: 38vh;
+}
+
+.contact-name {
+  font-size: x-large;
+  color: black;
+  background-color: transparent;
+  display: flex;
+}
+
+.contact-email {
+  font-size: x-large;
+  color: black;
+  background-color: transparent;
+  display: flex;
 }
 
 form {
@@ -1002,11 +1018,18 @@ input {
   border: 1px solid black;
 }
 
+.contact-textarea {
+  font-size: x-large;
+  color: black;
+  background-color: transparent;
+  display: flex;
+}
+
 
 
 
 @media (max-width: 1300px) {
-  .resume {
+  #resume {
     height: 1750px;
   }
 
@@ -1076,7 +1099,7 @@ input {
   }
 }
 @media (max-width: 1115px) {
-  .resume {
+  #resume {
     height: 1900px;
   }
   li.a-2::before {
@@ -1150,7 +1173,7 @@ input {
   }
 }
 @media (max-width: 1025px) {
-  .resume {
+  #resume {
     height: 2030px;
   }
   li.a-2-2::before {
@@ -1188,13 +1211,14 @@ input {
   }
 }
 @media (max-width: 991px) {
-  .resume {
+  #resume {
     height: 3300px;
   }
-  .about {
+  #about
+  {
     height: 160vh;
   }
-  .portfolio {
+  #portfolio {
     display: block;
     height: 300vh;
     background-size: cover;
@@ -1236,7 +1260,7 @@ input {
   }
 }
 @media (max-width: 800px) {
-  .resume {
+  #resume {
     height: 3500px;
   }
   li.a-2::before {
@@ -1274,7 +1298,7 @@ input {
   }
 }
 @media (max-width: 767px) {
-  .resume {
+  #resume {
     height: 2800px;
   }
   li.a-2::before {
@@ -1288,14 +1312,15 @@ input {
     border: 2px solid #1f5297;
     border-width: 2px 0 0 2px;
   }
-  .portfolio {
+  #portfolio {
     display: block;
     height: 550vh;
     background-size: cover;
     background-image: url(../public/images/img-5.jpeg);
     background-attachment: fixed;
   }
-  .about {
+  #about
+  {
     height: 220vh;
   }
 }
@@ -1370,16 +1395,26 @@ input {
     width: 3px;
     animation: blink 1s infinite;
   }
-  .portfolio {
+  #portfolio {
     display: block;
     height: 500vh;
     background-size: cover;
     background-image: url(../public/images/img-5.jpeg);
     background-attachment: fixed;
   }
+  nav .li-2 {
+    border: none;
+    display: inline-block;
+    padding: 5px;
+    font-size: large;
+    font-weight: bold;
+    transition: all 0.5s;
+    margin-right: 30px;
+    list-style: none;
+  }
 }
 @media (max-width: 670px) {
-  .resume {
+  #resume {
     height: 3000px;
   }
 
@@ -1417,10 +1452,10 @@ input {
     width: 3px;
     animation: blink 1s infinite;
   }
-  .resume {
+  #resume {
     height: 3200px;
   }
-  .portfolio {
+  #portfolio {
     display: block;
     height: 470vh;
     background-size: cover;
@@ -1429,7 +1464,7 @@ input {
   }
 }
 @media (max-width: 547px) {
-  .resume {
+  #resume {
     height: 3500px;
   }
   .name {
@@ -1464,19 +1499,30 @@ input {
     width: 3px;
     animation: blink 1s infinite;
   }
-  .portfolio {
+  #portfolio {
     display: block;
     height: 450vh;
     background-size: cover;
     background-image: url(../public/images/img-5.jpeg);
     background-attachment: fixed;
   }
+  nav .li-2 {
+    border: none;
+    display: inline-block;
+    padding: 5px;
+    font-size: medium;
+    font-weight: bold;
+    transition: all 0.5s;
+    margin-right: 20px;
+    list-style: none;
+  }
 }
 @media (max-width: 490px) { 
-  .resume {
+  #resume {
     height: 5200px;
   }
-  .about {
+  #about
+  {
     height: 250vh;
   }
   .name {
@@ -1511,7 +1557,7 @@ input {
     width: 3px;
     animation: blink 1s infinite;
   }
-  .portfolio {
+  #portfolio {
     display: block;
     height: 500vh;
     background-size: cover;
@@ -1561,5 +1607,15 @@ input {
     background: #fff;
     border: 2px solid #1f5297;
     border-width: 2px 0 0 2px;
+  }
+  nav .li-2 {
+    border: none;
+    display: inline-block;
+    padding: 5px;
+    font-size: medium;
+    font-weight: bold;
+    transition: all 0.5s;
+    margin-right: 6px;
+    list-style: none;
   }
 } 

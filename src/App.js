@@ -1,5 +1,5 @@
 import './App.css'
-import Intro from './components/Intro'
+import Home from './components/Home'
 import About from './components/About'
 import Resume from './components/Resume'
 import Portfolio from './components/Portfolio'
@@ -24,8 +24,9 @@ window.onload = function () {
 function App() {
   return (
     <div className='App'>
-        <>
-          <header>
+      <>
+        <header>
+          <Row>
             <div className='main-head'>
               <Navbar className='flex-row-reverse'>
                 <ul className='ul-1'>
@@ -36,7 +37,7 @@ function App() {
                     <a href='#about'>About</a>
                   </li>
                   <li className='links li-2'>
-                    <a href='#contact'>Resume</a>
+                    <a href='#resume'>Resume</a>
                   </li>
                   <li className='links li-2'>
                     <a href='#portfolio'>Portfolio</a>
@@ -47,10 +48,11 @@ function App() {
                 </ul>
               </Navbar>
             </div>
-          </header>
-        </>
+          </Row>
+        </header>
+      </>
 
-      <Intro />
+      <Home />
       <About />
       <Resume />
       <Portfolio />

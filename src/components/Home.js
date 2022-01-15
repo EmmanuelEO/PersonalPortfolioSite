@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from 'react'
 import { Container, Row } from 'react-bootstrap'
 import myImg from '../img/my_pic.png'
 
-const Intro = () => {
+const Home = () => {
   class TypeWriter {
     constructor(txtElement, words, wait = 3000) {
       this.txtElement = txtElement
@@ -109,4 +109,4 @@ const Intro = () => {
   )
 }
 
-export default Intro
+export default Home

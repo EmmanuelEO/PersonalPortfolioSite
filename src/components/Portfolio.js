@@ -1,5 +1,9 @@
 import React from 'react'
-import myImg from '../img/my_img.jpeg'
+import eComImg from '../img/ecommerce-img.jpeg'
+import studentManagementImg from '../img/studentManagement.png'
+import contactManagerImg from '../img/contactManagement.jpeg'
+import myPortfolio from '../img/myPortfolio.jpeg'
+import rushHourSolver from '../img/Rush_Hour_Game.png'
 
 const Portfolio = () => {
   return (
@@ -14,7 +18,7 @@ const Portfolio = () => {
         <div className='container-fluid'>
           <div className='row rounded'>
             <div className='col-sm-12 col-md-6 col-lg-4 py-3'>
-              <div className='card' data-aos='flip-up'>
+              <div className='card' data-aos='zoom-in'>
                 <a
                   href='https://shopoutletapp.herokuapp.com/'
                   target='_blank'
@@ -23,8 +27,8 @@ const Portfolio = () => {
                 >
                   <img
                     className='card-img port-width'
-                    src={myImg}
-                    alt='myImg'
+                    src={eComImg}
+                    alt='eComImg'
                   />
                 </a>
                 <div className='card-body'>
@@ -58,7 +62,7 @@ const Portfolio = () => {
               </div>
             </div>
             <div className='col-sm-12 col-md-6 col-lg-4 py-3'>
-              <div className='card' data-aos='flip-up'>
+              <div className='card' data-aos='zoom-in'>
                 <a
                   href='http://studentmanagementappfullstack-env.eba-6ayfszt3.us-east-1.elasticbeanstalk.com/'
                   target='_blank'
@@ -67,8 +71,8 @@ const Portfolio = () => {
                 >
                   <img
                     className='card-img port-width'
-                    src={myImg}
-                    alt='myImg'
+                    src={studentManagementImg}
+                    alt='studentManagementImg'
                   />
                 </a>
                 <div className='card-body'>
@@ -102,7 +106,7 @@ const Portfolio = () => {
               </div>
             </div>
             <div className='col-sm-12 col-md-6 col-lg-4 py-3'>
-              <div className='card' data-aos='flip-up'>
+              <div className='card' data-aos='zoom-in'>
                 <a
                   href='https://damp-mountain-49351.herokuapp.com/'
                   target='_blank'
@@ -111,8 +115,8 @@ const Portfolio = () => {
                 >
                   <img
                     className='card-img port-width'
-                    src={myImg}
-                    alt='myImg'
+                    src={contactManagerImg}
+                    alt='contactManagerImg'
                   />
                 </a>
                 <div className='card-body'>
@@ -146,7 +150,7 @@ const Portfolio = () => {
               </div>
             </div>
             <div className='col-sm-12 col-md-6 col-lg-4 py-3'>
-              <div className='card' data-aos='flip-up'>
+              <div className='card' data-aos='zoom-in'>
                 <a
                   href='https://google.com'
                   target='_blank'
@@ -155,8 +159,8 @@ const Portfolio = () => {
                 >
                   <img
                     className='card-img port-width'
-                    src={myImg}
-                    alt='myImg'
+                    src={myPortfolio}
+                    alt='myPortfolio'
                   />
                 </a>
                 <div className='card-body'>
@@ -180,7 +184,7 @@ const Portfolio = () => {
               </div>
             </div>
             <div className='col-sm-12 col-md-6 col-lg-4 py-3'>
-              <div className='card' data-aos='flip-up'>
+              <div className='card' data-aos='zoom-in'>
                 <a
                   href='https://github.com/EmmanuelEO/CMPT225_Rush_Hour_Solver'
                   target='_blank'
@@ -189,8 +193,8 @@ const Portfolio = () => {
                 >
                   <img
                     className='card-img port-width'
-                    src={myImg}
-                    alt='myImg'
+                    src={rushHourSolver}
+                    alt='rushHourSolver'
                   />
                 </a>
                 <div className='card-body'>
@@ -202,7 +206,7 @@ const Portfolio = () => {
                   >
                     <h5 className='card-title port-size'>
                       &nbsp;&nbsp;&nbsp;Github Repo: Rush Hour Solver using A*
-                      algorithm, BFS algorithm, DFS algortihm
+                      algorithm, BFS &amp; DFS algortihm
                     </h5>
                   </a>
                   <p className='card-text'>

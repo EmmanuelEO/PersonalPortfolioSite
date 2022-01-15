@@ -3,13 +3,13 @@ import { Row, Col } from 'react-bootstrap'
 
 const Resume = () => {
   return (
-    <section className='resume'>
+    <section id='resume'>
       <div>
         <p className='resume-title'>Resume</p>
         <p className='resume-border'></p>
       </div>
       <Row className='resume-detail'>
-        <Col sm={12} md={8} lg={6} id='col-1' data-aos='fade-right' data-aos-delay='500'>
+        <Col sm={12} md={8} lg={6} id='col-1' data-aos='fade-right'>
           <ul className='a-2'>
             <h3 className='h-3'>Summary</h3>
             <li className='a-2'>
@@ -84,7 +84,7 @@ const Resume = () => {
           </ul>
         </Col>
 
-        <Col id='col-2' sm={12} md={8} lg={6} data-aos='fade-left' data-aos-delay='2000'>
+        <Col id='col-2' sm={12} md={8} lg={6} data-aos='fade-left'>
           <ul className='a-2'>
             <h3 className='h-3'>Projects</h3>
             <li className='a-2-2'>
