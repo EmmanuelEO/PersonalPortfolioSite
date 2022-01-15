@@ -1615,6 +1615,7 @@ input {
     border: 2px solid #1f5297;
     border-width: 2px 0 0 2px;
   }
+  
   li.a-2-4::before {
     content: '';
     position: absolute;
