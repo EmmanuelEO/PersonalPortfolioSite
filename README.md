@@ -1,3 +1,6 @@
+# To view my finished personal portfolio site, click on the link below:
+[Personal Portfolio Site](https://eokonkwo.herokuapp.com/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
