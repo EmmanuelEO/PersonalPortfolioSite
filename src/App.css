@@ -326,8 +326,7 @@ html {
 
 #resume {
   height: 1500px;
-  position: relative;
-  left: 10vh;
+  padding-left: 10vh;
 }
 
 .n-1 {
