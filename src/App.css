@@ -1038,6 +1038,31 @@ input {
   #resume {
     height: 1750px;
   }
+  .name {
+    position: relative;
+    font-weight: 900;
+    font-size: 10vh;
+    padding-bottom: 0px;
+  }
+  .name-1 {
+    font-weight: 900;
+    font-size: 10vh;
+    padding-bottom: 25px;
+  }
+  .title {
+    font-size: 30px;
+    display: 'inline-block';
+    position: absolute;
+  }
+  .cursor {
+    font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    font-size: 30px;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
 
   li.a-2::before {
     content: '';
@@ -1094,19 +1119,17 @@ input {
     border: 2px solid #1f5297;
     border-width: 2px 0 0 2px;
   }
-  .cursor {
-    font-weight: bold;
-    position: absolute;
-    display: inline-block;
-    background-color: black;
-    font-size: 32px;
-    width: 3px;
-    animation: blink 1s infinite;
-  }
 }
 @media (max-width: 1115px) {
   #resume {
     height: 1900px;
+  }
+  #portfolio {
+    display: block;
+    height: 260vh;
+    background-size: cover;
+    background-image: url(../public/images/img-5.jpeg);
+    background-attachment: fixed;
   }
   li.a-2::before {
     content: '';
@@ -1226,7 +1249,7 @@ input {
   }
   #portfolio {
     display: block;
-    height: 300vh;
+    height: 350vh;
     background-size: cover;
     background-image: url(../public/images/img-5.jpeg);
     background-attachment: fixed;
@@ -1403,7 +1426,7 @@ input {
   }
   #portfolio {
     display: block;
-    height: 500vh;
+    height: 550vh;
     background-size: cover;
     background-image: url(../public/images/img-5.jpeg);
     background-attachment: fixed;
@@ -1463,7 +1486,7 @@ input {
   }
   #portfolio {
     display: block;
-    height: 470vh;
+    height: 520vh;
     background-size: cover;
     background-image: url(../public/images/img-5.jpeg);
     background-attachment: fixed;
@@ -1507,7 +1530,7 @@ input {
   }
   #portfolio {
     display: block;
-    height: 450vh;
+    height: 520vh;
     background-size: cover;
     background-image: url(../public/images/img-5.jpeg);
     background-attachment: fixed;
@@ -1565,7 +1588,7 @@ input {
   }
   #portfolio {
     display: block;
-    height: 500vh;
+    height: 570vh;
     background-size: cover;
     background-image: url(../public/images/img-5.jpeg);
     background-attachment: fixed;
@@ -1625,3 +1648,79 @@ input {
     list-style: none;
   }
 } 
+
+@media (max-width: 462px) { 
+  .name {
+    position: relative;
+    font-weight: 900;
+    font-size: 4vh;
+    padding-bottom: 0px;
+  }
+  .name-1 {
+    font-weight: 900;
+    font-size: 4vh;
+    padding-bottom: 25px;
+  }
+  .title {
+    font-size: 16px;
+    display: 'inline-block';
+    position: absolute;
+  }
+  .greeting {
+    position: relative;
+    top: 1.5vh;
+    font-size: 16px;
+    padding-bottom: 25px;
+    font-weight: bolder;
+  }
+  .cursor {
+    font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    font-size: 16px;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  #portfolio {
+    display: block;
+    height: 670vh;
+    background-size: cover;
+    background-image: url(../public/images/img-5.jpeg);
+    background-attachment: fixed;
+  }
+  nav .li-2 {
+    border: none;
+    display: inline-block;
+    padding: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.5s;
+    margin-right: 4px;
+    list-style: none;
+  }
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2050px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+}
+
+@media (max-width: 399px) { 
+  #resume {
+    height: 5600px;
+  }
+  #portfolio {
+    display: block;
+    height: 720vh;
+    background-size: cover;
+    background-image: url(../public/images/img-5.jpeg);
+    background-attachment: fixed;
+  }
+}
