@@ -2540,6 +2540,11 @@ input {
 }
 
 @media (max-width: 462px) { 
+  body {
+    font-family: 'EB Garamond';
+    background-color: rgb(245, 240, 240);
+    overflow-x: hidden;
+  }
   #resume {
     height: 3900px;
   }
@@ -2577,7 +2582,7 @@ input {
   }
   #portfolio {
     display: block;
-    height: 530vh;
+    height: 510vh;
     background-size: cover;
     background-image: url(../public/images/img-5.jpeg);
     background-attachment: fixed;
@@ -2606,8 +2611,14 @@ input {
   .connect-txt {
     padding: 10px;
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
+    position: relative;
+    left: -2vh;
+  }
+  .social-icon {
+    padding-right: 5vh;
+    font-size: 5vh;
   }
 }
 
@@ -2617,7 +2628,7 @@ input {
   }
   #portfolio {
     display: block;
-    height: 530vh;
+    height: 520vh;
     background-size: cover;
     background-image: url(../public/images/img-5.jpeg);
     background-attachment: fixed;
