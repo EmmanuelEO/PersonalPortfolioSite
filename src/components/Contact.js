@@ -1,12 +1,32 @@
 import React, { useRef } from 'react'
 import { Row, Container, Form } from 'react-bootstrap'
+import emailjs from 'emailjs-com'
+import $ from 'jquery'
 
 const Contact = () => {
-    const onSubmitHandler = (e) => {
-        e.preventDefault();
-    }
+  const onSubmitHandler = (e) => {
+    e.preventDefault()
+    emailjs
+      .sendForm(
+        'service_rkgexid',
+        'template_e6imvnj',
+        contactRef.current,
+        'user_sSxGD1kQzgarDOQXoLtLk'
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      )
+        const txtElement = document.querySelector('.status');
+        txtElement.innerHTML = `<span className="txt">Success! You have submitted the form.\nI'll reply to you as soon as possible.</span>`
+        setTimeout(() => {txtElement.innerHTML = ''}, 4000)
+  }
 
-    const contactRef = useRef()
+  const contactRef = useRef()
   return (
     <section id='contact'>
       <div>
@@ -23,6 +43,8 @@ const Contact = () => {
                     className='form-control mt-5 contact-name'
                     type='name'
                     placeholder='Enter your name: '
+                    name='from_name'
+                    required
                   />
                 </div>
                 <div>
@@ -30,6 +52,8 @@ const Contact = () => {
                     className='form-control mt-5 contact-email'
                     type='email'
                     placeholder='Enter your email: '
+                    name='from_email'
+                    required
                   />
                 </div>
                 <div>
@@ -39,12 +63,22 @@ const Contact = () => {
                     placeholder='Enter your message: '
                     className='form-control contact-textarea mt-5'
                     name='message'
+                    required
                   />
                 </div>
-                <button onClick={''} type="submit" class="btn btn-primary btn-lg" style={{ borderRadius: '50px' }}>Submit</button>
+                <p className='status'></p>
+                <button
+                  type='submit'
+                  id='myBtn'
+                  className='btn btn-primary btn-lg'
+                  style={{ borderRadius: '50px' }}
+                >
+                  Submit
+                </button>
               </Form>
             </>
           </div>
+          
         </Row>
       </Container>
     </section>

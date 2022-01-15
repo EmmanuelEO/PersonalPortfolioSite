@@ -748,6 +748,12 @@ h5 {
   font-family: 'EB Garamond';
 }
 
+h6 {
+  font-size: 18px;
+  font-weight: bold;
+  background: #e0ebf7
+}
+
 .h5-1 {
   font-family: EB Garamond;
   position: relative;
@@ -982,7 +988,7 @@ li.a-2-5::after {
 #contact {
   background-size: cover; 
   background-image: url(./img/93874765-tech-corporate-paper-grey-squares-background.jpeg);
-  padding: 35px 0px;
+  padding: 60px 0px;
 }
 
 .contact-border {

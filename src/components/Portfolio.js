@@ -53,10 +53,7 @@ const Portfolio = () => {
                     </h5>
                   </a>
                   <p className='card-text'>
-                    A Minecraft Java plugin that creates a minion that
-                    automatically mines for a player. Each minion has certain
-                    characteristics such as mining speed and inventory size that
-                    is upgradeable.
+                    Built a MERN full stack e-commerce project from sratch with Bootstrap, HTML, CSS, Javascript, MongoDB (NoSQL), and developed the Product Pages showcasing products on the site, the Order Pages in conjunction with an integrated PayPal API to allow a test order purchase to take note of delivered orders.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   </p>
                 </div>
               </div>
@@ -96,11 +93,8 @@ const Portfolio = () => {
                       Github Repo: &nbsp;AWS Student Management App
                     </h5>
                   </a>
-                  <p className='card-text'>
-                    A Minecraft Java plugin that creates a minion that
-                    automatically mines for a player. Each minion has certain
-                    characteristics such as mining speed and inventory size that
-                    is upgradeable.
+                  <p className='card-text pb-0 pt-0 mt-0 mb-0'>
+                    Implemented a full stack app for managing students using Java (Spring Boot, postgreSQL) for the backend of the app, React for the frontend of the app, Jib/Maven/Docker to add dependencies to the to the project that allow pushing up a docker image instance, Github Actions for CI/CD automations upon pull request from a branch, and AWS Elastic Beanstalk to host the app via access from a docker container.
                   </p>
                 </div>
               </div>
@@ -141,10 +135,8 @@ const Portfolio = () => {
                     </h5>
                   </a>
                   <p className='card-text'>
-                    A Minecraft Java plugin that creates a minion that
-                    automatically mines for a player. Each minion has certain
-                    characteristics such as mining speed and inventory size that
-                    is upgradeable.
+                      <h6>Technologies Used: MongoDB, Express, React, NodeJS, Context API, Hooks API, Github</h6>
+                      Implemented a contact Manager MERN full stack application that allows a user to register and login via JWT (Json Web Token) authentication. When logged in, the user has access to all their personal and professional contacts and can also filter through their existing contacts to easliy retrieve a contact. Deployed the complete applicaiton thrhough Git to Heroku.
                   </p>
                 </div>
               </div>

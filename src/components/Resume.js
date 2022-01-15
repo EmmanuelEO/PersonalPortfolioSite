@@ -5,7 +5,7 @@ const Resume = () => {
   return (
     <section id='resume'>
       <div>
-        <p className='resume-title'>Resume</p>
+        <p className='resume-title'>Résumé</p>
         <p className='resume-border'></p>
       </div>
       <Row className='resume-detail'>
@@ -15,8 +15,11 @@ const Resume = () => {
             <li className='a-2'>
               <h4 className='n-1'>&nbsp;Name: Emmanuel Okonkwo</h4>
               <div className='p-1'>
-                <p>Innovative, deadline-driven, and passion-driven Student, Software Engineer and Developer with 3+ years of programming
-                experience. The relevant courses I've taken include:</p>
+                <p>
+                  Innovative, deadline-driven, and passion-driven Student,
+                  Software Engineer and Developer with 3+ years of programming
+                  experience. The relevant courses I've taken include:
+                </p>
               </div>
               <ul className='a-1'>
                 <li className='a-1-1'>Operating Systems</li>
@@ -61,7 +64,7 @@ const Resume = () => {
                       <p className='vol-loc'>
                         Located at: Festac, Lagos, Nigeria.
                       </p>
-                      <p className='vol-desc'>
+                      <div className='vol-desc'>
                         - Throughout this period, I led the initiative to come
                         up with ideas on ways to help the people with dementia
                         to make them feel better. I majorly assisted by:
@@ -75,7 +78,7 @@ const Resume = () => {
                             and jewelry.
                           </li>
                         </ul>
-                      </p>
+                      </div>
                     </div>
                   </div>
                 </div>

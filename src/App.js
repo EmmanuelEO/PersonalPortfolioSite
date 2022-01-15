@@ -12,7 +12,6 @@ window.onload = function () {
 
   function activeMenu() {
     let len = sec.length
-    console.log(li)
     while (--len && window.scrollY + 97 < sec[len].offsetTop) {}
     li.forEach((list) => list.classList.remove('active'))
     li[len].classList.add('active')
@@ -37,7 +36,7 @@ function App() {
                     <a href='#about'>About</a>
                   </li>
                   <li className='links li-2'>
-                    <a href='#resume'>Resume</a>
+                    <a href='#resume'>Résumé</a>
                   </li>
                   <li className='links li-2'>
                     <a href='#portfolio'>Portfolio</a>

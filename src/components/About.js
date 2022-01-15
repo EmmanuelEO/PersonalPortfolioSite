@@ -20,19 +20,17 @@ const About = () => {
         <Container fluid>
           <Row>
             <div className='col-sm-12 col-md-6 col-lg-4 pt-5 pl-5'>
-              <Card style={{ borderRadius: '50px' }}>
                 <Card.Img
                   style={{ borderRadius: '50px' }}
                   src={myImg}
                   alt='aboutPic'
-                  data-aos='flip-up'
+                  data-aos='fade-right'
                   data-aos-duration='800'
                 />
-              </Card>
             </div>
             <div className='col-sm-24 col-md-12 col-lg-8 pt-5 pl-5'>
               <div>
-                <div className='about-info' data-aos='flip-up'
+                <div className='about-info' data-aos='fade-left'
                   data-aos-duration='slide-down'>
                   I'm currently a Computer Engineering Student at Simon Fraser
                   University, Burnaby, BC, Canada. I'm extremely passionate
