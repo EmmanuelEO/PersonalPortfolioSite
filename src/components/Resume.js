@@ -157,10 +157,10 @@ const Resume = () => {
                   <div className='div-10'>
                   <h5 className='h5-1'>Java, Spring Boot, React, Hooks API</h5>
                   <h5 className='h5-1'>
-                    Gitx, Github Actions (for CI/CD), Docker
+                    Git, Github Actions (for CI/CD), Docker
                   </h5>
                   <h5 className='h5-1'>
-                    postgreSQL (for Database), Postman API, Maven, Jib
+                    PostgreSQL (for Database), Postman API, Maven, Jib
                   </h5>
                   <h5 className='h5-1'>
                     AWS Elastic Beanstalk, AWS EC2, AWS RDS
