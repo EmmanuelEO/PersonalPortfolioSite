@@ -9,25 +9,27 @@ const Resume = () => {
         <p className='resume-border'></p>
       </div>
       <Row className='resume-detail'>
-        <Col sm={12} md={8} lg={6} id='col-1' data-aos='fade-right'>
+        <Col sm={12} md={12} lg={6} id='col-1' data-aos='fade-right'>
           <ul className='a-2'>
             <h3 className='h-3'>Summary</h3>
             <li className='a-2'>
-              <h4 className='n-1'>&nbsp;Name: Emmanuel Okonkwo</h4>
-              <div className='p-1'>
-                <p>
-                  Innovative, deadline-driven, and passion-driven Student,
-                  Software Engineer and Developer with 3+ years of programming
-                  experience. The relevant courses I've taken include:
-                </p>
+              <div className='div-9'>
+                <h4 className='n-1'>&nbsp;Name: Emmanuel Okonkwo</h4>
+                <div className='p-1'>
+                  <p>
+                    Innovative, deadline-driven, and passion-driven Student,
+                    Software Engineer and Developer with 3+ years of programming
+                    experience. The relevant courses I've taken include:
+                  </p>
+                </div>
+                <ul className='a-1'>
+                  <li className='a-1-1'>Operating Systems</li>
+                  <li className='a-1-1'>Software Engineering</li>
+                  <li className='a-1-1'>Data Structures and Algorithms</li>
+                  <li className='a-1-1'>Design and Analysis of Algorithms</li>
+                  <li className='a-1-1'>Database Systems</li>
+                </ul>
               </div>
-              <ul className='a-1'>
-                <li className='a-1-1'>Operating Systems</li>
-                <li className='a-1-1'>Software Engineering</li>
-                <li className='a-1-1'>Data Structures and Algorithms</li>
-                <li className='a-1-1'>Design and Analysis of Algorithms</li>
-                <li className='a-1-1'>Database Systems</li>
-              </ul>
             </li>
 
             <h3 className='h-3-1'>Education</h3>
@@ -87,7 +89,7 @@ const Resume = () => {
           </ul>
         </Col>
 
-        <Col id='col-2' sm={12} md={8} lg={6} data-aos='fade-left'>
+        <Col id='col-2' sm={12} md={12} lg={6} data-aos='fade-left'>
           <ul className='a-2'>
             <h3 className='h-3'>Projects</h3>
             <li className='a-2-2'>
@@ -152,6 +154,7 @@ const Resume = () => {
                 <div className='div-8'>
                   <h4 className='proj-2-tech'>&nbsp;(Technologies Used):</h4>
 
+                  <div className='div-10'>
                   <h5 className='h5-1'>Java, Spring Boot, React, Hooks API</h5>
                   <h5 className='h5-1'>
                     Gitx, Github Actions (for CI/CD), Docker
@@ -162,6 +165,7 @@ const Resume = () => {
                   <h5 className='h5-1'>
                     AWS Elastic Beanstalk, AWS EC2, AWS RDS
                   </h5>
+                  </div>
                   <ul className='ul-2'>
                     <li className='proj-2-desc'>
                       Implemented a full stack app for managing students using

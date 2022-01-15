@@ -251,9 +251,10 @@ html {
   font-size: 8vh;
   font-weight: 600;
   position: relative;
-  left: 10vh;
+  left: 2.5vh;
   top: 5vh;
   padding: 0;
+  display: inline-block;
 }
 
 .about-text-right {
@@ -270,7 +271,7 @@ html {
   border-bottom: 5px solid aqua;
   position: relative;
   top: 3vh;
-  left: 10vh;
+  left: 5vh;
   width: 33vh;
 }
 
@@ -337,7 +338,12 @@ html {
   font-family: 'EB Garamond';
   font-style: italic;
   font-weight: 900;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
+  display: inline;
+}
+
+.div-10 {
+  display: inline-block;
 }
 
 ul.a-2 {
@@ -499,6 +505,7 @@ li.a-2-3::after {
   font-style: italic;
   font-size: 30px;
   font-weight: bold;
+  display: inline;
 }
 
 .proj-1-web {
@@ -508,6 +515,7 @@ li.a-2-3::after {
   font-style: italic;
   font-size: 2.5vh;
   padding-bottom: 5px;
+  display: inline-block;
 }
 
 .proj-1-tech {
@@ -634,17 +642,19 @@ li.a-1-1 {
   position: relative;
   padding: 15px 0px;
   font-size: 25px;
-  top: 10px;
+  top: 20px;
   font-family: 'EB Garamond';
   color: grey;
   font-weight: 300;
   word-spacing: 2px;
+  display: inline;
 }
 
 .a-1 {
   position: relative;
-  top: -7vh;
-  left: -7vh;
+  top: -2vh;
+  left: 0vh;
+  display: inline;
 }
 
 h4 {
@@ -666,6 +676,7 @@ h4 {
   font-family: 'EB Garamond';
   font-style: italic;
   font-weight: 900;
+  display: inline;
 }
 
 .minor {
@@ -688,6 +699,7 @@ h4 {
   font-style: italic;
   font-size: 30px;
   font-weight: bold;
+  display: inline;
 }
 
 .volunteer {
@@ -733,6 +745,7 @@ h4 {
   font-size: 19px;
   color: #393a3b;
   list-style-type: disc;
+  display: inline-block;
 }
 
 h5 {
@@ -795,6 +808,7 @@ h6 {
   color: #626269;
   font-family: 'EB Garamond';
   font-style: 'italic';
+  display: inline-block;
 }
 
 .div-2 {
@@ -815,15 +829,17 @@ h6 {
 .ul-2 {
   position: relative;
   list-style-type: disc;
-  left: -7vh;
-  top: -10vh;
+  left: -1vh;
+  top: -2vh;
+  display: inline;
 }
 
 .ul-2-1 {
   position: relative;
   list-style-type: disc;
-  left: -7vh;
-  top: -10vh;
+  left: 0vh;
+  top: -3vh;
+  display: inline;
 }
 
 li.a-2-4 {
@@ -859,7 +875,7 @@ li.a-2-5 {
   overflow: hidden;
   position: relative;
   padding: 0px 0px 10px 35px;
-  top: -6vh;
+  top: -4vh;
 }
 li.a-2-5::before {
   content: '';
@@ -894,9 +910,10 @@ li.a-2-5::after {
   top: 1px;
   left: -5px;
   font-size: 30px;
-  font-family: EB Garamond;
+  font-family: 'EB Garamond';
   font-style: italic;
   font-weight: bold;
+  display: inline;
 }
 
 .proj-2-web {
@@ -907,6 +924,7 @@ li.a-2-5::after {
   font-size: 2.5vh;
   font-style: italic;
   padding-bottom: 10px;
+  display: inline-block;
 }
 
 .div-8 {
@@ -922,6 +940,7 @@ li.a-2-5::after {
   font-size: 2.5vh;
   font-style: italic;
   padding-bottom: 30px;
+  display: inline-block;
 }
 
 .proj-2-desc {
@@ -934,7 +953,7 @@ li.a-2-5::after {
 /* Portfolio Section Styling */
 #portfolio {
   display: block;
-  height: 220vh;
+  height: 230vh;
   background-size: cover;
   background-image: url(../public/images/img-5.jpeg);
   background-attachment: fixed;
@@ -944,8 +963,6 @@ li.a-2-5::after {
   font-size: 75px;
   font-weight: 900;
   font-family: 'EB Garamond';
-  top: 20vh;
-  left: -25vh;
 }
 
 .port-border {
@@ -965,9 +982,11 @@ li.a-2-5::after {
 }
 
 .portfolio-1 {
-  padding: 50px 100px;
   position: relative;
-  left: 2vh;
+}
+
+.port-1 {
+  padding: 10px 20px;
 }
 
 .project {
@@ -994,7 +1013,7 @@ li.a-2-5::after {
   border-bottom: 5px solid aqua;
   position: relative;
   top: 2vh;
-  left: 10vh;
+  left: 2.5vh;
   width: 38vh;
 }
 
@@ -1030,12 +1049,13 @@ input {
   display: flex;
 }
 
-
-
+@media (min-width: 2000px) {
+  
+}
 
 @media (max-width: 1300px) {
   #resume {
-    height: 1750px;
+    height: 1900px;
   }
   .name {
     position: relative;
@@ -1089,17 +1109,6 @@ input {
     content: '';
     position: absolute;
     width: 20px;
-    height: 370px;
-    left: 9px;
-    top: 30px;
-    background: #fff;
-    border: 2px solid #1f5297;
-    border-width: 2px 0 0 2px;
-  }
-  li.a-2-4::before {
-    content: '';
-    position: absolute;
-    width: 20px;
     height: 380px;
     left: 9px;
     top: 30px;
@@ -1111,7 +1120,7 @@ input {
     content: '';
     position: absolute;
     width: 20px;
-    height: 900px;
+    height: 1060px;
     left: 9px;
     top: 30px;
     background: #fff;
@@ -1121,11 +1130,11 @@ input {
 }
 @media (max-width: 1115px) {
   #resume {
-    height: 1900px;
+    height: 2100px;
   }
   #portfolio {
     display: block;
-    height: 260vh;
+    height: 240vh;
     background-size: cover;
     background-image: url(../public/images/img-5.jpeg);
     background-attachment: fixed;
@@ -1167,7 +1176,7 @@ input {
     content: '';
     position: absolute;
     width: 20px;
-    height: 1050px;
+    height: 1250px;
     left: 9px;
     top: 30px;
     background: #fff;
@@ -1200,9 +1209,90 @@ input {
     animation: blink 1s infinite;
   }
 }
-@media (max-width: 1025px) {
+@media (max-width: 1089px) {
   #resume {
-    height: 2030px;
+    height: 2250px;
+  }
+  #portfolio {
+    display: block;
+    height: 240vh;
+    background-size: cover;
+    background-image: url(../public/images/img-5.jpeg);
+    background-attachment: fixed;
+  }
+  li.a-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 400px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  li.a-2-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 690px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  li.a-2-4::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 380px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1250px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  .name {
+    position: relative;
+    font-weight: 900;
+    font-size: 8vh;
+    padding-bottom: 0px;
+  }
+  .name-1 {
+    font-weight: 900;
+    font-size: 8vh;
+    padding-bottom: 25px;
+  }
+  .title {
+    font-size: 26px;
+    display: 'inline-block';
+    position: absolute;
+  }
+  .cursor {
+    font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    font-size: 26px;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+}
+@media (max-width: 1029px) {
+  #resume {
+    height: 2400px;
   }
   li.a-2-2::before {
     content: '';
@@ -1230,7 +1320,45 @@ input {
     content: '';
     position: absolute;
     width: 20px;
-    height: 1130px;
+    height: 1300px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+}
+@media (max-width: 1021px) {
+  #resume {
+    height: 2550px;
+  }
+  li.a-2-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 690px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  li.a-2-4::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 420px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1400px;
     left: 9px;
     top: 30px;
     background: #fff;
@@ -1240,7 +1368,7 @@ input {
 }
 @media (max-width: 991px) {
   #resume {
-    height: 3300px;
+    height: 2700px;
   }
   #about
   {
@@ -1289,13 +1417,13 @@ input {
 }
 @media (max-width: 800px) {
   #resume {
-    height: 3500px;
+    height: 2700px;
   }
   li.a-2::before {
     content: '';
     position: absolute;
     width: 20px;
-    height: 380px;
+    height: 330px;
     left: 9px;
     top: 30px;
     background: #fff;
@@ -1306,7 +1434,7 @@ input {
     content: '';
     position: absolute;
     width: 20px;
-    height: 400px;
+    height: 490px;
     left: 9px;
     top: 30px;
     background: #fff;
@@ -1317,7 +1445,7 @@ input {
     content: '';
     position: absolute;
     width: 20px;
-    height: 1020px;
+    height: 700px;
     left: 9px;
     top: 30px;
     background: #fff;
@@ -1342,7 +1470,7 @@ input {
   }
   #portfolio {
     display: block;
-    height: 550vh;
+    height: 670vh;
     background-size: cover;
     background-image: url(../public/images/img-5.jpeg);
     background-attachment: fixed;
@@ -1352,7 +1480,7 @@ input {
     height: 220vh;
   }
 }
-@media (max-width: 750px) { 
+@media (max-width: 726px) { 
   .name {
     position: relative;
     font-weight: 900;
@@ -1388,6 +1516,17 @@ input {
     font-size: 32px;
     width: 3px;
     animation: blink 1s infinite;
+  }
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 760px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
   }
 } 
 @media (max-width: 700px) {
@@ -1425,7 +1564,7 @@ input {
   }
   #portfolio {
     display: block;
-    height: 550vh;
+    height: 650vh;
     background-size: cover;
     background-image: url(../public/images/img-5.jpeg);
     background-attachment: fixed;
@@ -1441,26 +1580,23 @@ input {
     list-style: none;
   }
 }
-@media (max-width: 670px) {
+@media (max-width: 685px) {
   #resume {
     height: 3000px;
   }
-
-}
-@media (max-width: 591px) {
   .name {
     position: relative;
     font-weight: 900;
-    font-size: 5vh;
+    font-size: 6vh;
     padding-bottom: 0px;
   }
   .name-1 {
     font-weight: 900;
-    font-size: 5vh;
+    font-size: 6vh;
     padding-bottom: 25px;
   }
   .title {
-    font-size: 20px;
+    font-size: 25px;
     display: 'inline-block';
     position: absolute;
   }
@@ -1476,24 +1612,225 @@ input {
     position: absolute;
     display: inline-block;
     background-color: black;
-    font-size: 20px;
+    font-size: 25px;
     width: 3px;
     animation: blink 1s infinite;
   }
-  #resume {
-    height: 3200px;
-  }
   #portfolio {
     display: block;
-    height: 520vh;
+    height: 620vh;
     background-size: cover;
     background-image: url(../public/images/img-5.jpeg);
     background-attachment: fixed;
   }
+  nav .li-2 {
+    border: none;
+    display: inline-block;
+    padding: 5px;
+    font-size: large;
+    font-weight: bold;
+    transition: all 0.5s;
+    margin-right: 30px;
+    list-style: none;
+  }
+}
+@media (max-width: 668px) {
+  #resume {
+    height: 3000px;
+  }
+  .name {
+    position: relative;
+    font-weight: 900;
+    font-size: 6vh;
+    padding-bottom: 0px;
+  }
+  .name-1 {
+    font-weight: 900;
+    font-size: 6vh;
+    padding-bottom: 25px;
+  }
+  .title {
+    font-size: 25px;
+    display: 'inline-block';
+    position: absolute;
+  }
+  .greeting {
+    position: relative;
+    top: 3vh;
+    font-size: 25px;
+    padding-bottom: 25px;
+    font-weight: bolder;
+  }
+  .cursor {
+    font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    font-size: 25px;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  #portfolio {
+    display: block;
+    height: 620vh;
+    background-size: cover;
+    background-image: url(../public/images/img-5.jpeg);
+    background-attachment: fixed;
+  }
+  nav .li-2 {
+    border: none;
+    display: inline-block;
+    padding: 5px;
+    font-size: large;
+    font-weight: bold;
+    transition: all 0.5s;
+    margin-right: 30px;
+    list-style: none;
+  }
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 860px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+}
+@media (max-width: 653px) {
+  #resume {
+    height: 3200px;
+  }
+  .name {
+    position: relative;
+    font-weight: 900;
+    font-size: 6vh;
+    padding-bottom: 0px;
+  }
+  .name-1 {
+    font-weight: 900;
+    font-size: 6vh;
+    padding-bottom: 25px;
+  }
+  .title {
+    font-size: 25px;
+    display: 'inline-block';
+    position: absolute;
+  }
+  .greeting {
+    position: relative;
+    top: 3vh;
+    font-size: 25px;
+    padding-bottom: 25px;
+    font-weight: bolder;
+  }
+  .cursor {
+    font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    font-size: 25px;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  #portfolio {
+    display: block;
+    height: 600vh;
+    background-size: cover;
+    background-image: url(../public/images/img-5.jpeg);
+    background-attachment: fixed;
+  }
+  nav .li-2 {
+    border: none;
+    display: inline-block;
+    padding: 5px;
+    font-size: large;
+    font-weight: bold;
+    transition: all 0.5s;
+    margin-right: 30px;
+    list-style: none;
+  }
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 930px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+}
+@media (max-width: 629px) {
+  li.a-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 390px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+}
+@media (max-width: 608px) {
+  #resume {
+    height: 3400px;
+  }
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1100px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+}
+@media (max-width: 591px) {
+  #about {
+    height: 190vh;
+  }
+  #resume {
+    height: 3600px;
+  }
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1100px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+}
+@media (max-width: 567px) {
+  #resume {
+    height: 3800px;
+  }
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1200px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
 }
 @media (max-width: 547px) {
   #resume {
-    height: 3500px;
+    height: 4000px;
   }
   .name {
     position: relative;
@@ -1529,10 +1866,32 @@ input {
   }
   #portfolio {
     display: block;
-    height: 520vh;
+    height: 570vh;
     background-size: cover;
     background-image: url(../public/images/img-5.jpeg);
     background-attachment: fixed;
+  }
+  li.a-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 440px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1300px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
   }
   nav .li-2 {
     border: none;
@@ -1545,13 +1904,336 @@ input {
     list-style: none;
   }
 }
+@media (max-width: 547px) {
+  #resume {
+    height: 4300px;
+  }
+  .name {
+    position: relative;
+    font-weight: 900;
+    font-size: 4.5vh;
+    padding-bottom: 0px;
+  }
+  .name-1 {
+    font-weight: 900;
+    font-size: 4.5vh;
+    padding-bottom: 25px;
+  }
+  .title {
+    font-size: 20px;
+    display: 'inline-block';
+    position: absolute;
+  }
+  .greeting {
+    position: relative;
+    top: 3vh;
+    font-size: 18px;
+    padding-bottom: 25px;
+    font-weight: bolder;
+  }
+  .cursor {
+    font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    font-size: 20px;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  #portfolio {
+    display: block;
+    height: 570vh;
+    background-size: cover;
+    background-image: url(../public/images/img-5.jpeg);
+    background-attachment: fixed;
+  }
+  li.a-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 440px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  li.a-2-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1500px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1455px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  nav .li-2 {
+    border: none;
+    display: inline-block;
+    padding: 5px;
+    font-size: medium;
+    font-weight: bold;
+    transition: all 0.5s;
+    margin-right: 20px;
+    list-style: none;
+  }
+}
+@media (max-width: 529px) {
+  .connect-txt {
+    padding: 10px;
+    text-align: center;
+    font-size: 31px;
+    font-weight: 600;
+  }
+  li.a-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 500px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+}
+@media (max-width: 514px) {
+  #resume {
+    height: 4500px;
+  }
+  ul.a-2 {
+    margin: 50px;
+    padding: 0;
+    color: #999;
+    display: inline;
+  }
+  nav .ul-1 {
+    position: relative;
+    left: -40px;
+  }
+  nav .li-2 {
+    font-size: 16px;
+  }
+  .p-1 {
+    position: relative;
+    font-size: 20px;
+  }
+  li.a-1-1 {
+    font-size: 17px;
+  }
+
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1560px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+}
+@media (max-width: 514px) {
+  #resume {
+    height: 4700px;
+  }
+  
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1660px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+}
+@media (max-width: 494px) {
+  #resume {
+    height: 4900px;
+  }
+  li.a-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 550px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1730px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  .name {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.7vh;
+    padding-bottom: 0px;
+  }
+  .name-1 {
+    font-weight: 900;
+    font-size: 3.7vh;
+    padding-bottom: 25px;
+  }
+  .title {
+    font-size: 20px;
+    display: 'inline-block';
+    position: absolute;
+  }
+  .greeting {
+    position: relative;
+    top: 3vh;
+    font-size: 18px;
+    padding-bottom: 25px;
+    font-weight: bolder;
+  }
+  .cursor {
+    font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    font-size: 20px;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+}
 @media (max-width: 490px) { 
   #resume {
     height: 5200px;
   }
   #about
   {
-    height: 250vh;
+    height: 180vh;
+  }
+  .name {
+    position: relative;
+    font-weight: 900;
+    font-size: 5vh;
+    padding-bottom: 0px;
+  }
+  .name-1 {
+    font-weight: 900;
+    font-size: 5vh;
+    padding-bottom: 25px;
+  }
+  .title {
+    font-size: 18px;
+    display: 'inline-block';
+    position: absolute;
+  }
+  .greeting {
+    position: relative;
+    top: 1.5vh;
+    font-size: 18px;
+    padding-bottom: 25px;
+    font-weight: bolder;
+  }
+  .cursor {
+    font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    font-size: 18px;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  #portfolio {
+    display: block;
+    height: 540vh;
+    background-size: cover;
+    background-image: url(../public/images/img-5.jpeg);
+    background-attachment: fixed;
+  }
+  li.a-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 550px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  li.a-2-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1500px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  
+  li.a-2-4::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 650px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1750px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  nav .li-2 {
+    border: none;
+    display: inline-block;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s;
+    margin-right: 6px;
+    list-style: none;
+  }
+} 
+
+@media (max-width: 479px) { 
+  #resume {
+    height: 5200px;
+  }
+  #about
+  {
+    height: 180vh;
   }
   .name {
     position: relative;
@@ -1630,7 +2312,7 @@ input {
     content: '';
     position: absolute;
     width: 20px;
-    height: 1750px;
+    height: 1950px;
     left: 9px;
     top: 30px;
     background: #fff;
@@ -1641,15 +2323,133 @@ input {
     border: none;
     display: inline-block;
     padding: 5px;
-    font-size: medium;
+    font-size: 18px;
     font-weight: bold;
     transition: all 0.5s;
     margin-right: 6px;
     list-style: none;
   }
-} 
+}
 
-@media (max-width: 462px) { 
+@media (max-width: 477px) { 
+  #resume {
+    height: 5300px;
+  }
+  #about
+  {
+    height: 180vh;
+  }
+  .name {
+    position: relative;
+    font-weight: 900;
+    font-size: 5vh;
+    padding-bottom: 0px;
+  }
+  .name-1 {
+    font-weight: 900;
+    font-size: 5vh;
+    padding-bottom: 25px;
+  }
+  .title {
+    font-size: 16px;
+    display: 'inline-block';
+    position: absolute;
+  }
+  .greeting {
+    position: relative;
+    top: 1.5vh;
+    font-size: 16px;
+    padding-bottom: 25px;
+    font-weight: bolder;
+  }
+  .cursor {
+    font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    font-size: 16px;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  #portfolio {
+    display: block;
+    height: 570vh;
+    background-size: cover;
+    background-image: url(../public/images/img-5.jpeg);
+    background-attachment: fixed;
+  }
+  li.a-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 620px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  li.a-2-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1500px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  
+  li.a-2-4::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 650px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2050px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  nav .li-2 {
+    border: none;
+    display: inline-block;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s;
+    margin-right: 6px;
+    list-style: none;
+  }
+}
+
+@media (max-width: 473px) { 
+  #resume {
+    height: 3700px;
+  }
+  #portfolio {
+    display: block;
+    height: 530vh;
+    background-size: cover;
+    background-image: url(../public/images/img-5.jpeg);
+    background-attachment: fixed;
+  }
+  #about
+  {
+    height: 210vh;
+  }
   .name {
     position: relative;
     font-weight: 900;
@@ -1682,9 +2482,102 @@ input {
     width: 3px;
     animation: blink 1s infinite;
   }
+  li.a-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 620px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  li.a-2-2::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1500px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  
+  li.a-2-4::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 650px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  li.a-2-5::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2050px;
+    left: 9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    border-width: 2px 0 0 2px;
+  }
+  nav .li-2 {
+    border: none;
+    display: inline-block;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s;
+    margin-right: 6px;
+    list-style: none;
+  }
+}
+
+@media (max-width: 462px) { 
+  #resume {
+    height: 3900px;
+  }
+  .name {
+    position: relative;
+    font-weight: 900;
+    font-size: 6vh;
+    padding-bottom: 0px;
+  }
+  .name-1 {
+    font-weight: 900;
+    font-size: 6vh;
+    padding-bottom: 25px;
+  }
+  .title {
+    font-size: 20px;
+    display: 'inline-block';
+    position: absolute;
+  }
+  .greeting {
+    position: relative;
+    top: 1.5vh;
+    font-size: 20px;
+    padding-bottom: 25px;
+    font-weight: bolder;
+  }
+  .cursor {
+    font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    font-size: 20px;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
   #portfolio {
     display: block;
-    height: 670vh;
+    height: 530vh;
     background-size: cover;
     background-image: url(../public/images/img-5.jpeg);
     background-attachment: fixed;
@@ -1693,7 +2586,7 @@ input {
     border: none;
     display: inline-block;
     padding: 3px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     transition: all 0.5s;
     margin-right: 4px;
@@ -1710,17 +2603,27 @@ input {
     border: 2px solid #1f5297;
     border-width: 2px 0 0 2px;
   }
+  .connect-txt {
+    padding: 10px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+  }
 }
 
 @media (max-width: 399px) { 
   #resume {
-    height: 5600px;
+    height: 4500px;
   }
   #portfolio {
     display: block;
-    height: 720vh;
+    height: 530vh;
     background-size: cover;
     background-image: url(../public/images/img-5.jpeg);
     background-attachment: fixed;
+  }
+  #about
+  {
+    height: 230vh;
   }
 }

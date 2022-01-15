@@ -9,14 +9,15 @@ const Portfolio = () => {
   return (
     <section id='portfolio'>
       <div className='portfolio-1'>
-        <p className='port-title'>Portfolio</p>
-        <p className='port-border'></p>
-        <div></div>
+        <div className='port-1'>
+          <p className='port-title'>Portfolio</p>
+          <p className='port-border'></p>
+        </div>
 
         <div className='container-fluid'>
           <div className='row rounded'>
-            <div className='col-sm-12 col-md-6 col-lg-4 py-3'>
-              <div className='card' data-aos='zoom-in'>
+            <div className='col-sm-12 col-md-6 col-lg-4 p-3'>
+              <div className='card pt-1' data-aos='zoom-in'>
                 <a
                   href='https://shopoutletapp.herokuapp.com/'
                   target='_blank'
@@ -27,6 +28,7 @@ const Portfolio = () => {
                     className='card-img port-width'
                     src={eComImg}
                     alt='eComImg'
+                    style={{ width: '100%', height: '100%' }}
                   />
                 </a>
                 <div className='card-body'>
@@ -56,12 +58,12 @@ const Portfolio = () => {
                     developed the Product Pages showcasing products on the site,
                     the Order Pages in conjunction with an integrated PayPal API
                     to allow a test order purchase to take note of delivered
-                    orders.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    orders.&nbsp;<p></p>&nbsp;<div>&nbsp;</div>
                   </p>
                 </div>
               </div>
             </div>
-            <div className='col-sm-12 col-md-6 col-lg-4 py-3'>
+            <div className='col-sm-12 col-md-6 col-lg-4 p-3'>
               <div className='card' data-aos='zoom-in'>
                 <a
                   href='http://studentmanagementappfullstack-env.eba-6ayfszt3.us-east-1.elasticbeanstalk.com/'
@@ -103,12 +105,12 @@ const Portfolio = () => {
                     dependencies to the to the project that allow pushing up a
                     docker image instance, Github Actions for CI/CD automations
                     upon pull request from a branch, and AWS Elastic Beanstalk
-                    to host the app via access from a docker container.
+                    to host the app via access from a docker container.<div>&nbsp;</div>
                   </p>
                 </div>
               </div>
             </div>
-            <div className='col-sm-12 col-md-6 col-lg-4 py-3'>
+            <div className='col-sm-12 col-md-6 col-lg-4 p-3'>
               <div className='card' data-aos='zoom-in'>
                 <a
                   href='https://damp-mountain-49351.herokuapp.com/'
@@ -159,7 +161,7 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-            <div className='col-sm-12 col-md-6 col-lg-4 py-3'>
+            <div className='col-sm-12 col-md-6 col-lg-4 p-3'>
               <div className='card' data-aos='zoom-in'>
                 <a
                   href='https://google.com'
@@ -198,7 +200,7 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-            <div className='col-sm-12 col-md-6 col-lg-4 py-3'>
+            <div className='col-sm-12 col-md-6 col-lg-4 p-3'>
               <div className='card' data-aos='zoom-in'>
                 <a
                   href='https://github.com/EmmanuelEO/CMPT225_Rush_Hour_Solver'
