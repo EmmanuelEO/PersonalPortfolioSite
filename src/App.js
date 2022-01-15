@@ -4,7 +4,7 @@ import About from './components/About'
 import Resume from './components/Resume'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
-import { Container, Navbar, Row } from 'react-bootstrap'
+import { Navbar, Row } from 'react-bootstrap'
 
 window.onload = function () {
   const sec = document.querySelectorAll('section')

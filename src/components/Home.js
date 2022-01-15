@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react'
+import React from 'react'
 import { Container, Row } from 'react-bootstrap'
 import myImg from '../img/my_pic.png'
 

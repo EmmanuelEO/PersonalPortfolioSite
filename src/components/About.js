@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import myImg from '../img/my_img.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {

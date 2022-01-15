@@ -1,7 +1,6 @@
 import React, { useRef } from 'react'
 import { Row, Container, Form } from 'react-bootstrap'
 import emailjs from 'emailjs-com'
-import $ from 'jquery'
 
 const Contact = () => {
   const onSubmitHandler = (e) => {
